@@ -1,0 +1,65 @@
+about:
+  description: Production-Grade Container Scheduling and Management
+  license: Apache-2.0
+  homepage: https://kubernetes.io
+  head: fde4ae2
+  archived: false
+  latestVersion: v1.37.0
+  collectedAt: 2026-09-04T03:54:55Z
+timeline:
+  created: 2014-06-06
+  lastCommit: 2026-09-04
+  lastRelease: 2026-08-26
+popularity:
+  star: 126329
+  watcher: 3264
+  fork: 43993
+  release: 815
+  contributor: 4347
+  pullRequest: 25638
+  issue: 49622
+language:
+  Go: 97140589
+  Shell: 1985849
+  PowerShell: 140591
+  Makefile: 50396
+  Dockerfile: 41512
+  Python: 27634
+  Go Template: 16106
+  C: 4205
+  sed: 1262
+  HTML: 16
+totalLine: 99408160
+recent:
+  last30d:
+    since: 2026-08-05
+    release: 6
+    mergedPR: 97
+    openPR: 308
+    closedIssue: 39
+    openIssue: 119
+    commit: 207
+  last90d:
+    since: 2026-06-06
+    release: 17
+    mergedPR: 751
+    openPR: 705
+    closedIssue: 213
+    openIssue: 308
+    commit: 1917
+  last180d:
+    since: 2026-03-08
+    release: 31
+    mergedPR: 1549
+    openPR: 985
+    closedIssue: 471
+    openIssue: 518
+    commit: 3898
+  last360d:
+    since: 2025-09-09
+    release: 59
+    mergedPR: 3200
+    openPR: 1118
+    closedIssue: 1137
+    openIssue: 711
+    commit: 7734
