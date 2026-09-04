@@ -7,15 +7,15 @@ about:
   head: 3ae0628
   archived: false
   latestVersion: v1.37.0
-  collectedAt: 2026-09-04T19:24:39Z
+  collectedAt: 2026-09-04T21:07:16Z
 timeline:
   created: 2014-06-06
   lastCommit: 2026-09-04
   lastRelease: 2026-08-26
 popularity:
-  star: 126344
+  star: 126347
   watcher: 3264
-  fork: 44004
+  fork: 44006
   release: 815
   contributor: 4348
   pullRequest: 91490
@@ -89,6 +89,109 @@ total:
   openIssue: 1863
   commit: 140852
 ---
+path: /home/runner/.x-repo/github.com/kubernetes/kubernetes
+collectedAt: 2026-09-04T21:08:38Z
+loc:
+  Go:
+    code: 4121339
+    comments: 782142
+    blanks: 448442
+    files: 17824
+  Json:
+    code: 1036207
+    comments: 0
+    blanks: 2
+    files: 1243
+  Yaml:
+    code: 390476
+    comments: 2522
+    blanks: 619
+    files: 6380
+  Sh:
+    code: 34003
+    comments: 12868
+    blanks: 6544
+    files: 316
+  Protobuf:
+    code: 14096
+    comments: 32570
+    blanks: 6942
+    files: 136
+  AssemblyGAS:
+    code: 9212
+    comments: 731
+    blanks: 2090
+    files: 54
+  PowerShell:
+    code: 2773
+    comments: 752
+    blanks: 272
+    files: 6
+  Makefile:
+    code: 1555
+    comments: 833
+    blanks: 454
+    files: 50
+  Autoconf:
+    code: 1171
+    comments: 169
+    blanks: 40
+    files: 23
+  Bash:
+    code: 1107
+    comments: 258
+    blanks: 168
+    files: 16
+  Python:
+    code: 508
+    comments: 167
+    blanks: 152
+    files: 7
+  Svg:
+    code: 399
+    comments: 4
+    blanks: 4
+    files: 5
+  Dockerfile:
+    code: 306
+    comments: 643
+    blanks: 149
+    files: 42
+  C:
+    code: 201
+    comments: 85
+    blanks: 50
+    files: 6
+  Bitbake:
+    code: 52
+    comments: 42
+    blanks: 8
+    files: 5
+  ForgeConfig:
+    code: 1
+    comments: 0
+    blanks: 0
+    files: 1
+  Html:
+    code: 1
+    comments: 0
+    blanks: 0
+    files: 1
+  Markdown:
+    code: 0
+    comments: 117909
+    blanks: 31587
+    files: 553
+  Text:
+    code: 0
+    comments: 4401
+    blanks: 140
+    files: 34
+total:
+  code: 5616350
+  comments: 956527
+  blanks: 498179
+  files: 26702
 ---
 date: "2026-08-24"
 repo:
