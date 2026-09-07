@@ -2,24 +2,24 @@ about:
   description: "Production-Grade Container Scheduling and Management"
   license: Apache-2.0
   homepage: https://kubernetes.io
-  head: b2ec8b6
+  head: 0ba07e0
   archived: false
   latestVersion: "v1.37.0"
-  collectedAt: 2026-09-07T06:08:50Z
+  collectedAt: 2026-09-07T18:22:07Z
 timeline:
   created: 2014-06-06
-  lastCommit: 2026-09-04
+  lastCommit: 2026-09-07
   lastRelease: 2026-08-26
 popularity:
-  star: 126666
-  watcher: 3264
-  fork: 44029
+  star: 126886
+  watcher: 3263
+  fork: 44030
   release: 815
   contributor: 4348
-  pullRequest: 91521
-  issue: 49630
+  pullRequest: 91528
+  issue: 49632
 language:
-  Go: 97232050
+  Go: 97323012
   Shell: 1984940
   PowerShell: 140591
   Makefile: 50396
@@ -29,81 +29,81 @@ language:
   C: 4205
   sed: 1262
   HTML: 16
-totalBytes: 99498712
+totalBytes: 99589674
 recent:
   last30d:
     since: 2026-08-08
     release: 5
-    mergedPR: 97
-    openPR: 326
-    closedIssue: 35
-    openIssue: 106
-    commit: 212
+    mergedPR: 106
+    openPR: 321
+    closedIssue: 34
+    openIssue: 109
+    commit: 231
   last60d:
     since: 2026-07-09
     release: 10
-    mergedPR: 357
-    openPR: 589
-    closedIssue: 139
-    openIssue: 232
-    commit: 721
+    mergedPR: 368
+    openPR: 581
+    closedIssue: 138
+    openIssue: 235
+    commit: 742
   last90d:
     since: 2026-06-09
     release: 17
-    mergedPR: 733
-    openPR: 727
-    closedIssue: 208
-    openIssue: 310
-    commit: 1716
+    mergedPR: 744
+    openPR: 719
+    closedIssue: 207
+    openIssue: 313
+    commit: 1740
   last180d:
     since: 2026-03-11
     release: 31
-    mergedPR: 1514
-    openPR: 1009
-    closedIssue: 461
-    openIssue: 519
-    commit: 3653
+    mergedPR: 1525
+    openPR: 1001
+    closedIssue: 460
+    openIssue: 522
+    commit: 3677
   last360d:
     since: 2025-09-12
     release: 55
-    mergedPR: 3177
-    openPR: 1150
-    closedIssue: 1125
-    openIssue: 711
-    commit: 7614
+    mergedPR: 3188
+    openPR: 1142
+    closedIssue: 1124
+    openIssue: 714
+    commit: 7638
   last720d:
     since: 2024-09-17
     release: 100
-    mergedPR: 6169
-    openPR: 1179
+    mergedPR: 6180
+    openPR: 1171
     closedIssue: 2855
-    openIssue: 974
-    commit: 15590
+    openIssue: 976
+    commit: 15614
 total:
   release: 815
-  mergedPR: 65841
-  openPR: 1198
+  mergedPR: 65852
+  openPR: 1190
   closedIssue: 47765
-  openIssue: 1865
-  commit: 140858
+  openIssue: 1867
+  commit: 140882
 ---
 path: /home/runner/.x-repo/github.com/kubernetes/kubernetes
-collectedAt: 2026-09-07T06:12:16Z
+collectedAt: 2026-09-07T18:26:31Z
 loc:
   Go:
-    code: 4122347
-    comments: 782502
-    blanks: 448585
-    files: 17838
+    code: 4123990
+    comments: 783004
+    blanks: 448790
+    files: 17846
   Json:
     code: 1036207
     comments: 0
     blanks: 2
     files: 1243
   Yaml:
-    code: 390476
-    comments: 2522
-    blanks: 619
+    code: 390470
+    comments: 2502
+    blanks: 617
     files: 6380
   Sh:
     code: 34011
@@ -131,9 +131,9 @@ loc:
     blanks: 454
     files: 50
   Autoconf:
-    code: 1171
-    comments: 169
-    blanks: 40
+    code: 1168
+    comments: 160
+    blanks: 39
     files: 23
   Bash:
     code: 1107
@@ -177,8 +177,8 @@ loc:
     files: 1
   Markdown:
     code: 0
-    comments: 117968
-    blanks: 31607
+    comments: 117977
+    blanks: 31611
     files: 554
   Text:
     code: 0
@@ -186,10 +186,10 @@ loc:
     blanks: 140
     files: 34
 total:
-  code: 5617377
-  comments: 956951
-  blanks: 498345
-  files: 26717
+  code: 5619011
+  comments: 957433
+  blanks: 498551
+  files: 26725
 ---
 date: "2026-08-24"
 repo:
@@ -367,7 +367,7 @@ checks:
       - 'Info:   0 out of   1 pipCommand dependencies pinned'
 ---
 eget:
-  collectedAt: 2026-09-07T06:12:28+00:00
+  collectedAt: 2026-09-07T18:26:52+00:00
   platform:
     darwin/arm64:
       name:  null
