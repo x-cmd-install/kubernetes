@@ -47,7 +47,7 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 127,087 · **Forks**: 44,034 · **Open issues**: 49,655 · **Contributors**: 4,359
+- **Stars**: 127,129 · **Forks**: 44,034 · **Open issues**: 49,655 · **Contributors**: 4,359
 
 ## Totals (cumulative)
 
@@ -91,4 +91,4 @@ Install metadata for kubernetes lives in the [x-cmd/install](https://github.com/
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260910.yml` · 2026-09-10T21:54:55Z._
+_Snapshot: `data/card/260910.yml` · 2026-09-10T22:08:34Z._
