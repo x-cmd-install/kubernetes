@@ -7,7 +7,7 @@ about:
   latestVersion: "v1.37.0"
   latestRelease: "v1.37.0"
   latestPrerelease: "v1.37.0-rc.1"
-  collectedAt: 2026-09-10T21:50:24Z
+  collectedAt: 2026-09-10T22:05:00Z
 timeline:
   created: 2014-06-06
   lastCommit: 2026-09-10
@@ -15,7 +15,7 @@ timeline:
   lastRelease: 2026-08-26
   lastPrerelease: 2026-08-20
 popularity:
-  star: 127087
+  star: 127129
   watcher: 3253
   fork: 44034
   release: 815
@@ -92,7 +92,7 @@ total:
   commit: 141045
 ---
 path: /home/runner/.x-repo/github.com/kubernetes/kubernetes
-collectedAt: 2026-09-10T21:53:57Z
+collectedAt: 2026-09-10T22:08:21Z
 loc:
   Go:
     code: 4119028
