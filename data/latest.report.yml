@@ -2,12 +2,12 @@ about:
   description: "Production-Grade Container Scheduling and Management"
   license: Apache-2.0
   homepage: https://kubernetes.io
-  head: 9323f71
+  head: e46e6b3
   archived: false
   latestVersion: "v1.37.0"
   latestRelease: "v1.37.0"
   latestPrerelease: "v1.37.0-rc.1"
-  collectedAt: 2026-09-11T06:26:19Z
+  collectedAt: 2026-09-11T18:22:43Z
 timeline:
   created: 2014-06-06
   lastCommit: 2026-09-11
@@ -15,15 +15,15 @@ timeline:
   lastRelease: 2026-08-26
   lastPrerelease: 2026-08-20
 popularity:
-  star: 127323
-  watcher: 3253
-  fork: 44034
+  star: 127337
+  watcher: 3254
+  fork: 44038
   release: 815
-  contributor: 4359
-  pullRequest: 91608
-  issue: 49657
+  contributor: 4365
+  pullRequest: 91626
+  issue: 49658
 language:
-  Go: 97536209
+  Go: 97512476
   Shell: 1984950
   PowerShell: 140591
   Makefile: 50396
@@ -33,82 +33,82 @@ language:
   C: 4205
   sed: 1262
   HTML: 16
-totalBytes: 99802881
+totalBytes: 99779148
 recent:
   last30d:
     since: 2026-08-12
     release: 5
-    mergedPR: 139
-    openPR: 318
-    closedIssue: 42
-    openIssue: 107
-    commit: 338
+    mergedPR: 152
+    openPR: 322
+    closedIssue: 47
+    openIssue: 103
+    commit: 372
   last60d:
     since: 2026-07-13
     release: 10
-    mergedPR: 389
-    openPR: 562
-    closedIssue: 141
-    openIssue: 221
-    commit: 870
+    mergedPR: 403
+    openPR: 563
+    closedIssue: 147
+    openIssue: 216
+    commit: 905
   last90d:
     since: 2026-06-13
     release: 12
-    mergedPR: 757
-    openPR: 701
-    closedIssue: 219
-    openIssue: 306
-    commit: 1873
+    mergedPR: 772
+    openPR: 702
+    closedIssue: 225
+    openIssue: 301
+    commit: 1909
   last180d:
     since: 2026-03-15
     release: 31
-    mergedPR: 1554
-    openPR: 986
-    closedIssue: 469
-    openIssue: 511
-    commit: 3814
+    mergedPR: 1569
+    openPR: 987
+    closedIssue: 475
+    openIssue: 506
+    commit: 3850
   last360d:
     since: 2025-09-16
     release: 55
-    mergedPR: 3238
-    openPR: 1125
-    closedIssue: 1145
-    openIssue: 709
-    commit: 7777
+    mergedPR: 3253
+    openPR: 1126
+    closedIssue: 1151
+    openIssue: 704
+    commit: 7813
   last720d:
     since: 2024-09-21
     release: 100
-    mergedPR: 6194
-    openPR: 1157
-    closedIssue: 2858
-    openIssue: 971
-    commit: 15662
+    mergedPR: 6209
+    openPR: 1158
+    closedIssue: 2865
+    openIssue: 965
+    commit: 15697
 total:
   release: 815
-  mergedPR: 65922
-  openPR: 1176
-  closedIssue: 47797
-  openIssue: 1860
-  commit: 141053
+  mergedPR: 65937
+  openPR: 1177
+  closedIssue: 47804
+  openIssue: 1854
+  commit: 141088
 ---
 path: /home/runner/.x-repo/github.com/kubernetes/kubernetes
-collectedAt: 2026-09-11T06:31:35Z
+collectedAt: 2026-09-11T18:26:57Z
 loc:
   Go:
-    code: 4119216
-    comments: 781769
-    blanks: 448485
-    files: 17836
+    code: 4119788
+    comments: 782081
+    blanks: 448542
+    files: 17847
   Json:
-    code: 1036241
+    code: 1036249
     comments: 0
     blanks: 2
     files: 1243
   Yaml:
-    code: 390455
-    comments: 2524
-    blanks: 615
-    files: 6380
+    code: 390510
+    comments: 2533
+    blanks: 617
+    files: 6382
   Sh:
     code: 33973
     comments: 12869
@@ -116,7 +116,7 @@ loc:
     files: 315
   Protobuf:
     code: 14096
-    comments: 32692
+    comments: 32693
     blanks: 6942
     files: 136
   AssemblyGAS:
@@ -144,6 +144,11 @@ loc:
     comments: 258
     blanks: 168
     files: 16
+  JavaScript:
+    code: 665
+    comments: 153
+    blanks: 96
+    files: 2
   Python:
     code: 508
     comments: 167
@@ -164,36 +169,41 @@ loc:
     comments: 85
     blanks: 50
     files: 6
+  Css:
+    code: 90
+    comments: 0
+    blanks: 20
+    files: 1
   Bitbake:
     code: 52
     comments: 42
     blanks: 8
     files: 5
-  ForgeConfig:
-    code: 1
+  Html:
+    code: 31
     comments: 0
     blanks: 0
-    files: 1
-  Html:
+    files: 2
+  ForgeConfig:
     code: 1
     comments: 0
     blanks: 0
     files: 1
   Markdown:
     code: 0
-    comments: 117856
-    blanks: 31587
-    files: 555
+    comments: 118084
+    blanks: 31664
+    files: 558
   Text:
     code: 0
-    comments: 4396
+    comments: 4399
     blanks: 140
     files: 34
 total:
-  code: 5614356
-  comments: 956228
-  blanks: 498231
-  files: 26716
+  code: 5615826
+  comments: 956952
+  blanks: 498487
+  files: 26736
 ---
 date: "2026-09-07"
 repo:
