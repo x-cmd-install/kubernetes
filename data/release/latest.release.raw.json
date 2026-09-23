@@ -43,14 +43,14 @@
   "body": "\nSee [kubernetes-announce@](https://groups.google.com/forum/#!forum/kubernetes-announce). Additional binary downloads are linked in the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.37.md).\n\nSee the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.37.md) for more details.\n\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/kubernetes/kubernetes/releases/377265881/reactions",
-    "total_count": 62,
-    "+1": 21,
+    "total_count": 68,
+    "+1": 22,
     "-1": 0,
-    "laugh": 4,
-    "hooray": 15,
+    "laugh": 5,
+    "hooray": 16,
     "confused": 0,
-    "heart": 7,
-    "rocket": 10,
-    "eyes": 5
+    "heart": 8,
+    "rocket": 11,
+    "eyes": 6
   }
 }
