@@ -4,7 +4,7 @@
 
 Production-Grade Container Scheduling and Management
 
-[![x-cmd/install — kubernetes Code Quality Monitoring Repo Card](https://repo.x-cmd.io/kubernetes.svg?lang=zh)](https://x-cmd.com/install/kubernetes)
+[![x-cmd/install — kubernetes Code Quality Monitoring Repo Card](https://x-cmd.com/repo-card/kubernetes.svg?lang=zh)](https://x-cmd.com/install/kubernetes)
 
 ## 安装
 
@@ -14,15 +14,15 @@ x install kubernetes
 
 ## 代码洞察
 
-合计: **5,619,721** 行代码（覆盖前 5 种语言、共 **26050** 个文件）。
+合计: **5,622,281** 行代码（覆盖前 5 种语言、共 **26054** 个文件）。
 
 | 语言 | 代码 | 注释 | 空行 | 文件数 |
 |------|-----:|-----:|-----:|------:|
-| Go | 4,123,883 | 782,867 | 448,806 | 17836 |
+| Go | 4,126,447 | 783,166 | 448,940 | 17840 |
 | Json | 1,035,788 | 0 | 2 | 1238 |
-| Yaml | 393,821 | 2,555 | 620 | 6526 |
+| Yaml | 393,817 | 2,549 | 620 | 6526 |
 | Sh | 33,984 | 12,873 | 6,541 | 315 |
-| Protobuf | 14,049 | 32,600 | 6,913 | 135 |
+| Protobuf | 14,049 | 32,603 | 6,913 | 135 |
 
 ## OpenSSF Scorecard 评分
 
@@ -30,8 +30,8 @@ x install kubernetes
 
 评分最低的几项:
 
-- **Token-Permissions** (-1/10) — No tokens found
 - **Packaging** (-1/10) — packaging workflow not detected
+- **Token-Permissions** (-1/10) — No tokens found
 - **Dangerous-Workflow** (-1/10) — no workflows found
 
 ## 源代码
@@ -47,22 +47,22 @@ x install kubernetes
 
 ## 流行度
 
-- **Star**: 127,890 · **Fork**: 44,792 · **开放 issue**: 49,709 · **贡献者**: 4,385
+- **Star**: 127,921 · **Fork**: 44,803 · **开放 issue**: 49,723 · **贡献者**: 4,387
 
 ## 累计统计
 
-- **发布数**: 815 · **已合并 PR**: 66064 · **开放 PR**: 1202 · **已关闭 issue**: 47832 · **开放 issue**: 1877 · **提交数**: 141343
+- **发布数**: 815 · **已合并 PR**: 66084 · **开放 PR**: 1206 · **已关闭 issue**: 47839 · **开放 issue**: 1884 · **提交数**: 141394
 
 ## 最近活动
 
 | 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-23 | 1 | 197 | 333 | 38 | 105 | 456 |
-| last60d | 2026-07-24 | 6 | 356 | 511 | 108 | 207 | 682 |
-| 90d | 2026-06-24 | 12 | 746 | 690 | 225 | 306 | 1736 |
-| last180d | 2026-03-26 | 27 | 1586 | 998 | 447 | 500 | 3772 |
-| 360d | 2025-09-27 | 55 | 3272 | 1150 | 1139 | 720 | 7790 |
-| last720d | 2024-10-02 | 100 | 6197 | 1184 | 2814 | 985 | 15671 |
+| 30d | 2026-08-24 | 1 | 202 | 339 | 39 | 116 | 477 |
+| last60d | 2026-07-25 | 6 | 371 | 513 | 110 | 217 | 706 |
+| 90d | 2026-06-25 | 12 | 747 | 694 | 226 | 316 | 1762 |
+| last180d | 2026-03-27 | 27 | 1603 | 992 | 446 | 508 | 3798 |
+| 360d | 2025-09-28 | 55 | 3287 | 1154 | 1141 | 729 | 7817 |
+| last720d | 2024-10-03 | 100 | 6209 | 1188 | 2814 | 993 | 15698 |
 
 ## 改进这些数据
 
@@ -73,4 +73,4 @@ kubernetes 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/instal
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/260922.yml` · 2026-09-22T06:36:24Z._
+_数据快照: `data/card/260923.yml` · 2026-09-23T06:43:06Z._
