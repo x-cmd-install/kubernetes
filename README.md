@@ -14,13 +14,13 @@ x install kubernetes
 
 ## Code insight
 
-Total: **5,652,013** lines of code across **26083** files in the top 5 languages.
+Total: **5,648,875** lines of code across **26038** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| Go | 4,155,449 | 797,181 | 452,283 | 17868 |
-| Json | 1,035,793 | 0 | 2 | 1238 |
-| Yaml | 394,518 | 2,549 | 620 | 6527 |
+| Go | 4,150,287 | 783,502 | 450,158 | 17822 |
+| Json | 1,035,787 | 0 | 2 | 1238 |
+| Yaml | 396,560 | 2,549 | 620 | 6528 |
 | Sh | 33,977 | 12,873 | 6,541 | 315 |
 | Protobuf | 14,049 | 32,647 | 6,913 | 135 |
 
@@ -31,8 +31,8 @@ Overall score: **7.6 / 10**
 Lowest-scoring checks:
 
 - **Packaging** (-1/10) — packaging workflow not detected
-- **Token-Permissions** (-1/10) — No tokens found
 - **Dangerous-Workflow** (-1/10) — no workflows found
+- **Token-Permissions** (-1/10) — No tokens found
 
 ## Source
 
@@ -42,27 +42,27 @@ Lowest-scoring checks:
 
 ## Release
 
-- **Latest**: `v1.34.12` (2026-09-23)
-- **Last commit**: 2026-09-29
+- **Latest**: `v1.38.0-alpha.1` (2026-09-23)
+- **Last commit**: 2026-09-30
 
 ## Popularity
 
-- **Stars**: 128,088 · **Forks**: 45,610 · **Open issues**: 49,756 · **Contributors**: 4,392
+- **Stars**: 128,125 · **Forks**: 45,697 · **Open issues**: 49,760 · **Contributors**: 4,397
 
 ## Totals (cumulative)
 
-- **Releases**: 819 · **Merged PRs**: 66166 · **Open PRs**: 1246 · **Closed issues**: 47860 · **Open issues**: 1896 · **Commits**: 141595
+- **Releases**: 820 · **Merged PRs**: 66185 · **Open PRs**: 1246 · **Closed issues**: 47864 · **Open issues**: 1896 · **Commits**: 141642
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-30 | 4 | 227 | 354 | 44 | 118 | 502 |
-| last60d | 2026-07-31 | 10 | 407 | 524 | 106 | 215 | 812 |
-| 90d | 2026-07-01 | 15 | 759 | 727 | 222 | 311 | 1691 |
-| last180d | 2026-04-02 | 31 | 1644 | 1020 | 448 | 506 | 3913 |
-| 360d | 2025-10-04 | 59 | 3318 | 1193 | 1143 | 736 | 7836 |
-| last720d | 2024-10-09 | 100 | 6237 | 1229 | 2797 | 1003 | 15791 |
+| 30d | 2026-08-31 | 5 | 233 | 344 | 44 | 117 | 526 |
+| last60d | 2026-08-01 | 11 | 421 | 522 | 109 | 214 | 841 |
+| 90d | 2026-07-02 | 16 | 767 | 721 | 225 | 306 | 1720 |
+| last180d | 2026-04-03 | 32 | 1657 | 1016 | 451 | 505 | 3942 |
+| 360d | 2025-10-05 | 60 | 3332 | 1193 | 1143 | 735 | 7865 |
+| last720d | 2024-10-10 | 100 | 6249 | 1229 | 2798 | 1003 | 15814 |
 
 ## Improve this data
 
@@ -73,4 +73,4 @@ Install metadata for kubernetes lives in the [x-cmd/install](https://github.com/
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260929.yml` · 2026-09-29T07:06:07Z._
+_Snapshot: `data/card/260930.yml` · 2026-09-30T06:55:13Z._
