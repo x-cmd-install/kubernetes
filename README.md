@@ -14,11 +14,11 @@ x install kubernetes
 
 ## Code insight
 
-Total: **5,683,757** lines of code across **26083** files in the top 5 languages.
+Total: **5,683,994** lines of code across **26083** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| Go | 4,178,366 | 787,944 | 452,054 | 17893 |
+| Go | 4,178,603 | 787,951 | 452,058 | 17893 |
 | Json | 1,043,388 | 0 | 0 | 1234 |
 | Yaml | 396,633 | 2,572 | 629 | 6520 |
 | Sh | 33,084 | 12,438 | 6,372 | 300 |
@@ -47,22 +47,22 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 128,241 · **Forks**: 46,489 · **Open issues**: 49,817 · **Contributors**: 4,412
+- **Stars**: 128,263 · **Forks**: 46,628 · **Open issues**: 49,817 · **Contributors**: 4,412
 
 ## Totals (cumulative)
 
-- **Releases**: 821 · **Merged PRs**: 66330 · **Open PRs**: 1343 · **Closed issues**: 47910 · **Open issues**: 1907 · **Commits**: 141995
+- **Releases**: 821 · **Merged PRs**: 66335 · **Open PRs**: 1352 · **Closed issues**: 47910 · **Open issues**: 1907 · **Commits**: 141999
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-09-10 | 6 | 255 | 384 | 45 | 118 | 635 |
-| last60d | 2026-08-11 | 11 | 494 | 591 | 105 | 208 | 1091 |
-| 90d | 2026-07-12 | 16 | 777 | 790 | 226 | 306 | 1737 |
-| last180d | 2026-04-13 | 32 | 1739 | 1096 | 468 | 506 | 4164 |
-| 360d | 2025-10-15 | 60 | 3379 | 1287 | 1132 | 744 | 8023 |
-| last720d | 2024-10-20 | 100 | 6299 | 1325 | 2778 | 1008 | 15913 |
+| 30d | 2026-09-11 | 6 | 252 | 380 | 44 | 115 | 492 |
+| last60d | 2026-08-12 | 11 | 490 | 596 | 104 | 205 | 1055 |
+| 90d | 2026-07-13 | 16 | 772 | 794 | 222 | 300 | 1463 |
+| last180d | 2026-04-14 | 32 | 1736 | 1100 | 464 | 503 | 4081 |
+| 360d | 2025-10-16 | 60 | 3364 | 1296 | 1128 | 743 | 7823 |
+| last720d | 2024-10-21 | 100 | 6288 | 1334 | 2768 | 1008 | 15914 |
 
 ## Improve this data
 
@@ -73,4 +73,4 @@ Install metadata for kubernetes lives in the [x-cmd/install](https://github.com/
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261010.yml` · 2026-10-10T07:08:04Z._
+_Snapshot: `data/card/261011.yml` · 2026-10-11T07:04:08Z._
