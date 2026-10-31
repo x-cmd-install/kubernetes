@@ -2,28 +2,28 @@ about:
   description: "Production-Grade Container Scheduling and Management"
   license: Apache-2.0
   homepage: https://kubernetes.io
-  head: f2a57ac
+  head: 11750cf
   archived: false
   latestVersion: "v1.38.0-alpha.3"
   latestRelease: "v1.34.13"
   latestPrerelease: "v1.38.0-alpha.3"
-  collectedAt: 2026-10-30T07:15:01Z
+  collectedAt: 2026-10-31T06:55:17Z
 timeline:
   created: 2014-06-06
-  lastCommit: 2026-10-30
+  lastCommit: 2026-10-31
   lastVersion: 2026-10-28
   lastRelease: 2026-10-28
   lastPrerelease: 2026-10-28
 popularity:
-  star: 128521
-  watcher: 3240
-  fork: 46372
+  star: 128556
+  watcher: 3238
+  fork: 46376
   release: 826
-  contributor: 4438
-  pullRequest: 92892
-  issue: 49929
+  contributor: 4444
+  pullRequest: 92936
+  issue: 49942
 language:
-  Go: 101758743
+  Go: 102026555
   Shell: 1935338
   PowerShell: 140591
   Makefile: 47131
@@ -33,80 +33,80 @@ language:
   C: 4205
   sed: 1262
   HTML: 16
-totalBytes: 103970781
+totalBytes: 104238593
 recent:
   last30d:
-    since: 2026-09-30
+    since: 2026-10-01
     release: 6
-    mergedPR: 387
-    openPR: 365
-    closedIssue: 50
-    openIssue: 111
-    commit: 779
+    mergedPR: 398
+    openPR: 371
+    closedIssue: 47
+    openIssue: 120
+    commit: 834
   last60d:
-    since: 2026-08-31
+    since: 2026-09-01
     release: 11
-    mergedPR: 715
-    openPR: 596
-    closedIssue: 112
-    openIssue: 217
-    commit: 1483
+    mergedPR: 726
+    openPR: 598
+    closedIssue: 111
+    openIssue: 229
+    commit: 1539
   last90d:
-    since: 2026-08-01
+    since: 2026-08-02
     release: 17
-    mergedPR: 920
-    openPR: 735
-    closedIssue: 189
-    openIssue: 302
-    commit: 1784
+    mergedPR: 940
+    openPR: 739
+    closedIssue: 185
+    openIssue: 313
+    commit: 1844
   last180d:
-    since: 2026-05-03
+    since: 2026-05-04
     release: 32
-    mergedPR: 1966
-    openPR: 1073
-    closedIssue: 481
-    openIssue: 516
-    commit: 4345
+    mergedPR: 1982
+    openPR: 1080
+    closedIssue: 477
+    openIssue: 527
+    commit: 4406
   last360d:
-    since: 2025-11-04
+    since: 2025-11-05
     release: 64
-    mergedPR: 3530
-    openPR: 1248
-    closedIssue: 1134
-    openIssue: 741
-    commit: 7967
+    mergedPR: 3538
+    openPR: 1256
+    closedIssue: 1127
+    openIssue: 754
+    commit: 8029
   last720d:
-    since: 2024-11-09
+    since: 2024-11-10
     release: 100
-    mergedPR: 6462
-    openPR: 1283
-    closedIssue: 2755
-    openIssue: 990
-    commit: 15765
+    mergedPR: 6489
+    openPR: 1291
+    closedIssue: 2753
+    openIssue: 1003
+    commit: 15826
 total:
   release: 826
-  mergedPR: 66737
-  openPR: 1299
+  mergedPR: 66767
+  openPR: 1307
   closedIssue: 48043
-  openIssue: 1886
-  commit: 142809
+  openIssue: 1899
+  commit: 142883
 ---
 path: /home/runner/.x-repo/github.com/kubernetes/kubernetes
-collectedAt: 2026-10-30T07:18:42Z
+collectedAt: 2026-10-31T06:58:03Z
 loc:
   Go:
-    code: 4251807
-    comments: 800839
-    blanks: 458294
-    files: 18097
+    code: 4257154
+    comments: 801793
+    blanks: 458728
+    files: 18104
   Json:
     code: 1046826
     comments: 0
     blanks: 0
     files: 1235
   Yaml:
-    code: 398678
-    comments: 2646
+    code: 398724
+    comments: 2652
     blanks: 646
     files: 6523
   Sh:
@@ -116,7 +116,7 @@ loc:
     files: 299
   Protobuf:
     code: 14184
-    comments: 33297
+    comments: 33305
     blanks: 6975
     files: 136
   AssemblyGAS:
@@ -196,8 +196,8 @@ loc:
     files: 1
   Markdown:
     code: 0
-    comments: 120082
-    blanks: 32262
+    comments: 120095
+    blanks: 32266
     files: 555
   Text:
     code: 0
@@ -205,10 +205,10 @@ loc:
     blanks: 140
     files: 34
 total:
-  code: 5766421
-  comments: 978033
-  blanks: 508784
-  files: 27100
+  code: 5771814
+  comments: 979014
+  blanks: 509222
+  files: 27107
 ---
 date: "2026-10-19"
 repo:
