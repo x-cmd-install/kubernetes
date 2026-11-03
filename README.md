@@ -14,15 +14,15 @@ x install kubernetes
 
 ## Code insight
 
-Total: **5,769,000** lines of code across **26297** files in the top 5 languages.
+Total: **5,769,413** lines of code across **26299** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| Go | 4,257,301 | 801,804 | 458,745 | 18104 |
+| Go | 4,257,690 | 802,045 | 458,878 | 18106 |
 | Json | 1,046,826 | 0 | 0 | 1235 |
-| Yaml | 398,724 | 2,652 | 646 | 6523 |
+| Yaml | 398,748 | 2,652 | 646 | 6523 |
 | Sh | 33,239 | 12,476 | 6,395 | 299 |
-| Protobuf | 14,184 | 33,305 | 6,975 | 136 |
+| Protobuf | 14,184 | 33,311 | 6,975 | 136 |
 
 ## OpenSSF Scorecard
 
@@ -43,30 +43,30 @@ Lowest-scoring checks:
 ## Release
 
 - **Latest**: `v1.38.0-alpha.3` (2026-10-28)
-- **Last commit**: 2026-11-01
+- **Last commit**: 2026-11-03
 
 ## Popularity
 
-- **Stars**: 128,827 · **Forks**: 45,737 · **Open issues**: 49,946 · **Contributors**: 4,445
+- **Stars**: 128,631 · **Forks**: 45,757 · **Open issues**: 49,952 · **Contributors**: 4,451
 
 ## Totals (cumulative)
 
-- **Releases**: 826 · **Merged PRs**: 66772 · **Open PRs**: 1330 · **Closed issues**: 48046 · **Open issues**: 1900 · **Commits**: 142893
+- **Releases**: 826 · **Merged PRs**: 66795 · **Open PRs**: 1333 · **Closed issues**: 48051 · **Open issues**: 1901 · **Commits**: 142944
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-03 | 6 | 385 | 379 | 44 | 121 | 622 |
-| last60d | 2026-09-03 | 11 | 707 | 606 | 107 | 221 | 1419 |
-| 90d | 2026-08-04 | 17 | 931 | 753 | 183 | 308 | 1808 |
-| last180d | 2026-05-06 | 32 | 1958 | 1092 | 471 | 521 | 4227 |
-| 360d | 2025-11-07 | 63 | 3506 | 1276 | 1116 | 752 | 7906 |
-| last720d | 2024-11-12 | 100 | 6483 | 1314 | 2738 | 1004 | 15821 |
+| 30d | 2026-10-04 | 6 | 400 | 384 | 46 | 124 | 669 |
+| last60d | 2026-09-04 | 11 | 716 | 601 | 108 | 219 | 1469 |
+| 90d | 2026-08-05 | 17 | 941 | 751 | 182 | 305 | 1858 |
+| last180d | 2026-05-07 | 32 | 1963 | 1092 | 469 | 521 | 4277 |
+| 360d | 2025-11-08 | 63 | 3526 | 1279 | 1120 | 752 | 7956 |
+| last720d | 2024-11-13 | 100 | 6500 | 1317 | 2734 | 1005 | 15843 |
 
 ## Distribution status
 
-Reported by **612** distros on [repology.org](https://repology.org/project/kubernetes). **34** are ✅ on the latest upstream release, **260** are ⚠️ on an older version.
+Reported by **612** distros on [repology.org](https://repology.org/project/kubernetes). **36** are ✅ on the latest upstream release, **258** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
@@ -80,7 +80,7 @@ Reported by **612** distros on [repology.org](https://repology.org/project/kuber
 | Nix unstable | `1.37.2` | ✅ latest |
 | Void | `1.37.0` | ⚠️ outdated |
 | Alpine edge | `1.37.1` | ⚠️ outdated |
-| openSUSE Tumbleweed | `1.37.1` | ⚠️ outdated |
+| openSUSE Tumbleweed | `1.37.2` | ✅ latest |
 
 ## Improve this data
 
@@ -91,4 +91,4 @@ Install metadata for kubernetes lives in the [x-cmd/install](https://github.com/
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261102.yml` · 2026-11-02T07:43:50Z._
+_Snapshot: `data/card/261103.yml` · 2026-11-03T08:27:20Z._
