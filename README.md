@@ -47,26 +47,26 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 129,318 · **Forks**: 45,096 · **Open issues**: 50,067 · **Contributors**: 4,485
+- **Stars**: 129,380 · **Forks**: 45,103 · **Open issues**: 50,074 · **Contributors**: 4,485
 
 ## Totals (cumulative)
 
-- **Releases**: 827 · **Merged PRs**: 67183 · **Open PRs**: 1364 · **Closed issues**: 48209 · **Open issues**: 1858 · **Commits**: 144080
+- **Releases**: 827 · **Merged PRs**: 67183 · **Open PRs**: 1366 · **Closed issues**: 48211 · **Open issues**: 1863 · **Commits**: 144080
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-23 | 6 | 398 | 371 | 51 | 122 | 886 |
-| last60d | 2026-09-23 | 12 | 881 | 593 | 118 | 216 | 1907 |
-| 90d | 2026-08-24 | 13 | 1200 | 785 | 198 | 301 | 2658 |
-| last180d | 2026-05-26 | 29 | 2148 | 1120 | 503 | 522 | 4819 |
-| 360d | 2025-11-27 | 59 | 3823 | 1309 | 1172 | 738 | 8835 |
-| last720d | 2024-12-02 | 100 | 6796 | 1349 | 2777 | 977 | 16878 |
+| 30d | 2026-10-24 | 6 | 388 | 371 | 48 | 126 | 886 |
+| last60d | 2026-09-24 | 8 | 865 | 591 | 119 | 215 | 1907 |
+| 90d | 2026-08-25 | 13 | 1190 | 784 | 197 | 304 | 2658 |
+| last180d | 2026-05-27 | 29 | 2138 | 1124 | 505 | 524 | 4819 |
+| 360d | 2025-11-28 | 59 | 3815 | 1313 | 1170 | 743 | 8835 |
+| last720d | 2024-12-03 | 100 | 6790 | 1351 | 2775 | 981 | 16871 |
 
 ## Distribution status
 
-Reported by **618** distros on [repology.org](https://repology.org/project/kubernetes). **60** are ✅ on the latest upstream release, **233** are ⚠️ on an older version.
+Reported by **618** distros on [repology.org](https://repology.org/project/kubernetes). **61** are ✅ on the latest upstream release, **232** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
@@ -75,7 +75,7 @@ Reported by **618** distros on [repology.org](https://repology.org/project/kuber
 | Debian 13 | `1.32.3` | ⚠️ outdated |
 | Ubuntu 24.04 LTS | `1.0` | ⚠️ outdated |
 | Arch | `1.37.2` | ✅ latest |
-| Homebrew | `1.33.13` | 🪦 legacy |
+| Homebrew | `1.37.2` | ✅ latest |
 | Fedora rawhide | `1.34.13` | 🪦 legacy |
 | Nix unstable | `1.37.2` | ✅ latest |
 | Void | `1.37.0` | ⚠️ outdated |
@@ -91,4 +91,4 @@ Install metadata for kubernetes lives in the [x-cmd/install](https://github.com/
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261122.yml` · 2026-11-22T08:50:08Z._
+_Snapshot: `data/card/261123.yml` · 2026-11-23T11:15:34Z._
