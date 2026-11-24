@@ -1,94 +1,59 @@
-- repo: wakemeops
-  subrepo: devops
+- repo: scoop
+  subrepo: main
   binname: kubectl
   visiblename: kubectl
-  version: 1.36.1
-  origversion: 1.36.1-1~ops2deb
-  status: legacy
-  maintainers:
-    - ops2deb@upciti.com
-- repo: wakemeops
-  subrepo: devops
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.36.0
-  origversion: 1.36.0-1~ops2deb
-  status: legacy
-  maintainers:
-    - ops2deb@upciti.com
-- repo: wakemeops
-  subrepo: devops
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.35.3
-  origversion: 1.35.3-1~ops2deb
-  status: legacy
-  maintainers:
-    - ops2deb@upciti.com
-- repo: wakemeops
-  subrepo: devops
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.35.2
-  origversion: 1.35.2-1~ops2deb
-  status: legacy
-  maintainers:
-    - ops2deb@upciti.com
-- repo: wakemeops
-  subrepo: devops
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.35.1
-  origversion: 1.35.1-1~ops2deb
-  status: legacy
-  maintainers:
-    - ops2deb@upciti.com
-- repo: nix_stable_24_05
-  srcname: kubectl
-  visiblename: kubectl
-  version: 1.30.1
+  version: 1.37.2
   origversion: null
-  status: outdated
-  summary: Kubernetes CLI
-  maintainers:
-    - write@ownrisk.dk
-    - jaka@x-truder.net
-    - mail@saschagrunert.de
-    - sbrofeldt@gmail.com
+  status: newest
   licenses:
     - Apache-2.0
-- repo: wakemeops
-  subrepo: devops
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.35.0
-  origversion: 1.35.0-1~ops2deb
-  status: legacy
-  maintainers:
-    - ops2deb@upciti.com
-- repo: wakemeops
-  subrepo: devops
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.34.3
-  origversion: 1.34.3-1~ops2deb
-  status: legacy
-  maintainers:
-    - ops2deb@upciti.com
-- repo: nix_stable_24_05
-  srcname: kubectl-convert
-  visiblename: kubectl
-  version: 1.30.1
-  origversion: null
-  status: outdated
-  summary: Kubernetes CLI
-  maintainers:
-    - write@ownrisk.dk
-    - jaka@x-truder.net
-    - mail@saschagrunert.de
-    - sbrofeldt@gmail.com
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: kubernetes
+  binname: kube-apiserver
+  visiblename: kube-apiserver
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: Kubernetes control plane component exposing the Kubernetes API
   licenses:
     - Apache-2.0
+- repo: parrot
+  subrepo: parrot/main
+  srcname: kubernetes
+  binnames:
+    - kubectl
+    - golang-k8s-kubectl-dev
+    - kubernetes-client
+  visiblename: kubernetes
+  version: 1.32.3
+  origversion: 1.32.3+ds-2
+  status: outdated
+  maintainers:
+    - team+kubernetes@tracker.debian.org
+    - arthurbdiniz@gmail.com
+    - ocsi@debian.org
+  categories:
+    - misc
+- repo: slackbuilds
+  srcname: network/kubectl
+  visiblename: network/kubectl
+  version: 1.37.2
+  origversion: null
+  status: newest
+  maintainers:
+    - ricardsonwilliams+slackbuild@gmail.com
+  categories:
+    - network
+- repo: wakemeops
+  subrepo: devops
+  binname: kubectl
+  visiblename: kubectl
+  version: 1.33.4
+  origversion: 1.33.4-1~ops2deb
+  status: legacy
+  maintainers:
+    - ops2deb@upciti.com
 - repo: aerynos
   srcname: kubectl
   visiblename: kubectl
@@ -124,19 +89,6 @@
     - fcolista@alpinelinux.org
   licenses:
     - Apache-2.0
-- repo: alpine_edge
-  subrepo: community
-  srcname: kubernetes
-  binname: kube-proxy
-  visiblename: kube-proxy
-  version: 1.37.1
-  origversion: 1.37.1-r1
-  status: outdated
-  summary: Kubernetes - kube-proxy
-  maintainers:
-    - fcolista@alpinelinux.org
-  licenses:
-    - Apache-2.0
 - repo: alpine_3_19
   subrepo: community
   srcname: kubernetes
@@ -150,6 +102,18 @@
     - fcolista@alpinelinux.org
   licenses:
     - Apache-2.0
+- repo: aur
+  srcname: kubeadm-bin
+  binname: kubeadm-bin
+  visiblename: kubeadm-bin
+  version: 1.36.2
+  origversion: 1.36.2-1
+  status: outdated
+  summary: Kubernetes.io kubeadm binary
+  maintainers:
+    - georgeraven@aur
+  licenses:
+    - Apache
 - repo: alpine_3_19
   subrepo: community
   srcname: kubernetes
@@ -904,19 +868,6 @@
     - fcolista@alpinelinux.org
   licenses:
     - Apache-2.0
-- repo: alpine_edge
-  subrepo: community
-  srcname: kubernetes
-  binname: kube-proxy-openrc
-  visiblename: kube-proxy-openrc
-  version: 1.37.1
-  origversion: 1.37.1-r1
-  status: outdated
-  summary: Kubernetes - kube-proxy (OpenRC init scripts)
-  maintainers:
-    - fcolista@alpinelinux.org
-  licenses:
-    - Apache-2.0
 - repo: alpine_3_22
   subrepo: community
   srcname: kubernetes
@@ -926,6 +877,19 @@
   origversion: 1.33.1-r5
   status: outdated
   summary: Bash completions for kubeadm
+  maintainers:
+    - fcolista@alpinelinux.org
+  licenses:
+    - Apache-2.0
+- repo: alpine_edge
+  subrepo: community
+  srcname: kubernetes
+  binname: kube-scheduler
+  visiblename: kube-scheduler
+  version: 1.37.1
+  origversion: 1.37.1-r1
+  status: outdated
+  summary: Kubernetes - kube-scheduler
   maintainers:
     - fcolista@alpinelinux.org
   licenses:
@@ -1160,19 +1124,6 @@
   origversion: 1.34.2-r6
   status: outdated
   summary: Bash completions for kubeadm
-  maintainers:
-    - fcolista@alpinelinux.org
-  licenses:
-    - Apache-2.0
-- repo: alpine_edge
-  subrepo: community
-  srcname: kubernetes
-  binname: kube-scheduler
-  visiblename: kube-scheduler
-  version: 1.37.1
-  origversion: 1.37.1-r1
-  status: outdated
-  summary: Kubernetes - kube-scheduler
   maintainers:
     - fcolista@alpinelinux.org
   licenses:
@@ -1570,6 +1521,32 @@
 - repo: alpine_edge
   subrepo: community
   srcname: kubernetes
+  binname: kube-proxy
+  visiblename: kube-proxy
+  version: 1.37.1
+  origversion: 1.37.1-r1
+  status: outdated
+  summary: Kubernetes - kube-proxy
+  maintainers:
+    - fcolista@alpinelinux.org
+  licenses:
+    - Apache-2.0
+- repo: alpine_edge
+  subrepo: community
+  srcname: kubernetes
+  binname: kube-proxy-openrc
+  visiblename: kube-proxy-openrc
+  version: 1.37.1
+  origversion: 1.37.1-r1
+  status: outdated
+  summary: Kubernetes - kube-proxy (OpenRC init scripts)
+  maintainers:
+    - fcolista@alpinelinux.org
+  licenses:
+    - Apache-2.0
+- repo: alpine_edge
+  subrepo: community
+  srcname: kubernetes
   binname: kube-scheduler-openrc
   visiblename: kube-scheduler-openrc
   version: 1.37.1
@@ -1697,26 +1674,15 @@
     - fcolista@alpinelinux.org
   licenses:
     - Apache-2.0
-- repo: manjaro_testing
+- repo: arch
   subrepo: extra
   srcname: kubernetes
-  binname: kube-proxy
-  visiblename: kube-proxy
+  binname: kubectl
+  visiblename: kubectl
   version: 1.37.2
   origversion: 1.37.2-1
   status: newest
-  summary: Kubernetes network proxy that runs on each node
-  licenses:
-    - Apache-2.0
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: kubernetes
-  binname: kubeadm
-  visiblename: kubeadm
-  version: 1.37.2
-  origversion: 1.37.2-1
-  status: newest
-  summary: A tool for quickly installing Kubernetes and setting up a secure cluster
+  summary: A command line tool for communicating with a Kubernetes API server
   licenses:
     - Apache-2.0
 - repo: alpine_edge
@@ -1858,17 +1824,6 @@
     - Apache-2.0
   categories:
     - System/Configuration/Other
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: kubernetes
-  binname: kube-apiserver
-  visiblename: kube-apiserver
-  version: 1.37.2
-  origversion: 1.37.2-1
-  status: newest
-  summary: Kubernetes control plane component exposing the Kubernetes API
-  licenses:
-    - Apache-2.0
 - repo: alt_p11
   srcname: kubernetes1.31
   binnames:
@@ -2121,18 +2076,6 @@
     - Apache-2.0
   categories:
     - System/Configuration/Other
-- repo: aur
-  srcname: kubelet-bin
-  binname: kubelet-bin
-  visiblename: kubelet-bin
-  version: 1.36.2
-  origversion: 1.36.2-1
-  status: outdated
-  summary: Kubernetes.io kubelet binary
-  maintainers:
-    - georgeraven@aur
-  licenses:
-    - Apache
 - repo: altsisyphus
   srcname: kubernetes1.25
   binnames:
@@ -2298,6 +2241,50 @@
 - repo: arch
   subrepo: extra
   srcname: kubernetes
+  binname: kubernetes-control-plane-common
+  visiblename: kubernetes-control-plane-common
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: Common files for Kubernetes control plane packages
+  licenses:
+    - Apache-2.0
+- repo: arch
+  subrepo: extra
+  srcname: kubernetes
+  binname: kube-scheduler
+  visiblename: kube-scheduler
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: Kubernetes control plane component watching over pods on nodes
+  licenses:
+    - Apache-2.0
+- repo: arch
+  subrepo: extra
+  srcname: kubernetes
+  binname: kubeadm
+  visiblename: kubeadm
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: A tool for quickly installing Kubernetes and setting up a secure cluster
+  licenses:
+    - Apache-2.0
+- repo: arch
+  subrepo: extra
+  srcname: kubernetes
+  binname: kube-controller-manager
+  visiblename: kube-controller-manager
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: Kubernetes control plane component that runs controller processes
+  licenses:
+    - Apache-2.0
+- repo: arch
+  subrepo: extra
+  srcname: kubernetes
   binname: kubelet
   visiblename: kubelet
   version: 1.37.2
@@ -2328,73 +2315,6 @@
   summary: Kubernetes control plane component exposing the Kubernetes API
   licenses:
     - Apache-2.0
-- repo: arch
-  subrepo: extra
-  srcname: kubernetes
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.37.2
-  origversion: 1.37.2-1
-  status: newest
-  summary: A command line tool for communicating with a Kubernetes API server
-  licenses:
-    - Apache-2.0
-- repo: arch
-  subrepo: extra
-  srcname: kubernetes
-  binname: kube-scheduler
-  visiblename: kube-scheduler
-  version: 1.37.2
-  origversion: 1.37.2-1
-  status: newest
-  summary: Kubernetes control plane component watching over pods on nodes
-  licenses:
-    - Apache-2.0
-- repo: arch
-  subrepo: extra
-  srcname: kubernetes
-  binname: kubeadm
-  visiblename: kubeadm
-  version: 1.37.2
-  origversion: 1.37.2-1
-  status: newest
-  summary: A tool for quickly installing Kubernetes and setting up a secure cluster
-  licenses:
-    - Apache-2.0
-- repo: arch
-  subrepo: extra
-  srcname: kubernetes
-  binname: kubernetes-control-plane-common
-  visiblename: kubernetes-control-plane-common
-  version: 1.37.2
-  origversion: 1.37.2-1
-  status: newest
-  summary: Common files for Kubernetes control plane packages
-  licenses:
-    - Apache-2.0
-- repo: arch
-  subrepo: extra
-  srcname: kubernetes
-  binname: kube-controller-manager
-  visiblename: kube-controller-manager
-  version: 1.37.2
-  origversion: 1.37.2-1
-  status: newest
-  summary: Kubernetes control plane component that runs controller processes
-  licenses:
-    - Apache-2.0
-- repo: aur
-  srcname: kubeadm-bin
-  binname: kubeadm-bin
-  visiblename: kubeadm-bin
-  version: 1.36.2
-  origversion: 1.36.2-1
-  status: outdated
-  summary: Kubernetes.io kubeadm binary
-  maintainers:
-    - georgeraven@aur
-  licenses:
-    - Apache
 - repo: aur
   srcname: kubectl-bin
   binname: kubectl-bin
@@ -2403,6 +2323,18 @@
   origversion: 1.36.2-1
   status: outdated
   summary: Kubernetes.io kubectl binary
+  maintainers:
+    - georgeraven@aur
+  licenses:
+    - Apache
+- repo: aur
+  srcname: kubelet-bin
+  binname: kubelet-bin
+  visiblename: kubelet-bin
+  version: 1.36.2
+  origversion: 1.36.2-1
+  status: outdated
+  summary: Kubernetes.io kubelet binary
   maintainers:
     - georgeraven@aur
   licenses:
@@ -2531,23 +2463,6 @@
   categories:
     - Unspecified
 - repo: fedora_40
-  subrepo: release
-  srcname: kubernetes
-  binnames:
-    - kubernetes
-    - kubernetes-kubeadm
-    - kubernetes-client
-    - kubernetes-systemd
-  visiblename: kubernetes
-  version: 1.29.3
-  origversion: 1.29.3-7.fc40
-  status: legacy
-  summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0
-  categories:
-    - Unspecified
-- repo: fedora_40
   subrepo: updates
   srcname: kubernetes
   binnames:
@@ -2559,6 +2474,23 @@
   version: 1.29.14
   origversion: 1.29.14-2.fc40
   status: outdated
+  summary: Open Source Production-Grade Container Scheduling And Management Platform
+  licenses:
+    - Apache-2.0
+  categories:
+    - Unspecified
+- repo: fedora_40
+  subrepo: release
+  srcname: kubernetes
+  binnames:
+    - kubernetes
+    - kubernetes-kubeadm
+    - kubernetes-client
+    - kubernetes-systemd
+  visiblename: kubernetes
+  version: 1.29.3
+  origversion: 1.29.3-7.fc40
+  status: legacy
   summary: Open Source Production-Grade Container Scheduling And Management Platform
   licenses:
     - Apache-2.0
@@ -2717,6 +2649,19 @@
     - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND ISC AND MIT
   categories:
     - Unspecified
+- repo: liguros_stable
+  srcname: sys-cluster/kubectl
+  visiblename: sys-cluster/kubectl
+  version: 1.31.11
+  origversion: null
+  status: legacy
+  summary: CLI to run commands against Kubernetes clusters
+  maintainers:
+    - williamh@gentoo.org
+  licenses:
+    - Apache-2.0
+  categories:
+    - sys-cluster
 - repo: fedora_41
   subrepo: updates
   srcname: kubernetes1.33
@@ -2749,91 +2694,6 @@
   summary: Open Source Production-Grade Container Scheduling And Management Platform
   licenses:
     - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT
-  categories:
-    - Unspecified
-- repo: fedora_42
-  subrepo: release
-  srcname: kubernetes1.29
-  binnames:
-    - kubernetes1.29
-    - kubernetes1.29-kubeadm
-    - kubernetes1.29-client
-    - kubernetes1.29-systemd
-  visiblename: kubernetes1.29
-  version: 1.29.15
-  origversion: 1.29.15-2.fc42
-  status: legacy
-  summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0
-  categories:
-    - Unspecified
-- repo: gentoo
-  srcname: sys-cluster/kube-proxy
-  visiblename: sys-cluster/kube-proxy
-  version: 1.35.3
-  origversion: null
-  status: legacy
-  summary: Kubernetes Proxy service
-  maintainers:
-    - williamh@gentoo.org
-  licenses:
-    - Apache-2.0
-    - BSD
-    - BSD-2
-    - ISC
-    - MIT
-  categories:
-    - sys-cluster
-- repo: fedora_42
-  subrepo: release
-  srcname: kubernetes1.30
-  binnames:
-    - kubernetes1.30
-    - kubernetes1.30-kubeadm
-    - kubernetes1.30-client
-    - kubernetes1.30-systemd
-  visiblename: kubernetes1.30
-  version: 1.30.11
-  origversion: 1.30.11-1.fc42
-  status: legacy
-  summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0
-  categories:
-    - Unspecified
-- repo: fedora_42
-  subrepo: release
-  srcname: kubernetes1.31
-  binnames:
-    - kubernetes1.31
-    - kubernetes1.31-kubeadm
-    - kubernetes1.31-client
-    - kubernetes1.31-systemd
-  visiblename: kubernetes1.31
-  version: 1.31.7
-  origversion: 1.31.7-1.fc42
-  status: legacy
-  summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0
-  categories:
-    - Unspecified
-- repo: fedora_42
-  subrepo: release
-  srcname: kubernetes1.32
-  binnames:
-    - kubernetes1.32
-    - kubernetes1.32-kubeadm
-    - kubernetes1.32-client
-    - kubernetes1.32-systemd
-  visiblename: kubernetes1.32
-  version: 1.32.3
-  origversion: 1.32.3-1.fc42
-  status: legacy
-  summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0
   categories:
     - Unspecified
 - repo: fedora_42
@@ -2887,17 +2747,6 @@
     - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND ISC AND MIT
   categories:
     - Unspecified
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: kubernetes
-  binname: kube-controller-manager
-  visiblename: kube-controller-manager
-  version: 1.37.2
-  origversion: 1.37.2-1
-  status: newest
-  summary: Kubernetes control plane component that runs controller processes
-  licenses:
-    - Apache-2.0
 - repo: fedora_42
   subrepo: updates
   srcname: kubernetes1.33
@@ -2949,8 +2798,42 @@
     - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT AND MPL-2.0
   categories:
     - Unspecified
-- repo: fedora_43
-  subrepo: updates
+- repo: fedora_42
+  subrepo: release
+  srcname: kubernetes1.29
+  binnames:
+    - kubernetes1.29
+    - kubernetes1.29-kubeadm
+    - kubernetes1.29-client
+    - kubernetes1.29-systemd
+  visiblename: kubernetes1.29
+  version: 1.29.15
+  origversion: 1.29.15-2.fc42
+  status: legacy
+  summary: Open Source Production-Grade Container Scheduling And Management Platform
+  licenses:
+    - Apache-2.0
+  categories:
+    - Unspecified
+- repo: fedora_42
+  subrepo: release
+  srcname: kubernetes1.30
+  binnames:
+    - kubernetes1.30
+    - kubernetes1.30-kubeadm
+    - kubernetes1.30-client
+    - kubernetes1.30-systemd
+  visiblename: kubernetes1.30
+  version: 1.30.11
+  origversion: 1.30.11-1.fc42
+  status: legacy
+  summary: Open Source Production-Grade Container Scheduling And Management Platform
+  licenses:
+    - Apache-2.0
+  categories:
+    - Unspecified
+- repo: fedora_42
+  subrepo: release
   srcname: kubernetes1.31
   binnames:
     - kubernetes1.31
@@ -2958,16 +2841,16 @@
     - kubernetes1.31-client
     - kubernetes1.31-systemd
   visiblename: kubernetes1.31
-  version: 1.31.14
-  origversion: 1.31.14-1.fc43
+  version: 1.31.7
+  origversion: 1.31.7-1.fc42
   status: legacy
   summary: Open Source Production-Grade Container Scheduling And Management Platform
   licenses:
-    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND ISC AND MIT
+    - Apache-2.0
   categories:
     - Unspecified
-- repo: fedora_43
-  subrepo: updates
+- repo: fedora_42
+  subrepo: release
   srcname: kubernetes1.32
   binnames:
     - kubernetes1.32
@@ -2975,129 +2858,12 @@
     - kubernetes1.32-client
     - kubernetes1.32-systemd
   visiblename: kubernetes1.32
-  version: 1.32.13
-  origversion: 1.32.13-1.fc43
+  version: 1.32.3
+  origversion: 1.32.3-1.fc42
   status: legacy
   summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND ISC AND MIT
-  categories:
-    - Unspecified
-- repo: fedora_43
-  subrepo: updates
-  srcname: kubernetes1.33
-  binnames:
-    - kubernetes1.33
-    - kubernetes1.33-kubeadm
-    - kubernetes1.33-client
-    - kubernetes1.33-systemd
-  visiblename: kubernetes1.33
-  version: 1.33.13
-  origversion: 1.33.13-1.fc43
-  status: legacy
-  summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT
-  categories:
-    - Unspecified
-- repo: fedora_43
-  subrepo: updates
-  srcname: kubernetes1.34
-  binnames:
-    - kubernetes1.34
-    - kubernetes1.34-kubeadm
-    - kubernetes1.34-client
-    - kubernetes1.34-systemd
-  visiblename: kubernetes1.34
-  version: 1.34.13
-  origversion: 1.34.13-1.fc43
-  status: legacy
-  summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT
-  categories:
-    - Unspecified
-- repo: gentoo
-  srcname: sys-cluster/kube-proxy
-  visiblename: sys-cluster/kube-proxy
-  version: 1.35.0
-  origversion: null
-  status: legacy
-  summary: Kubernetes Proxy service
-  maintainers:
-    - williamh@gentoo.org
   licenses:
     - Apache-2.0
-    - BSD
-    - BSD-2
-    - ISC
-    - MIT
-  categories:
-    - sys-cluster
-- repo: fedora_43
-  subrepo: updates
-  srcname: kubernetes1.35
-  binnames:
-    - kubernetes1.35
-    - kubernetes1.35-kubeadm
-    - kubernetes1.35-client
-    - kubernetes1.35-systemd
-  visiblename: kubernetes1.35
-  version: 1.35.10
-  origversion: 1.35.10-1.fc43
-  status: legacy
-  summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT AND MPL-2.0
-  categories:
-    - Unspecified
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: kubernetes
-  binname: kubernetes-control-plane-common
-  visiblename: kubernetes-control-plane-common
-  version: 1.37.2
-  origversion: 1.37.2-1
-  status: newest
-  summary: Common files for Kubernetes control plane packages
-  licenses:
-    - Apache-2.0
-- repo: fedora_43
-  subrepo: updates
-  srcname: kubernetes1.36
-  binnames:
-    - kubernetes1.36
-    - kubernetes1.36-kubeadm
-    - kubernetes1.36-client
-    - kubernetes1.36-systemd
-    - kubernetes1.36-debuginfo
-    - kubernetes1.36-debugsource
-  visiblename: kubernetes1.36
-  version: 1.36.6
-  origversion: 1.36.6-1.fc43
-  status: legacy
-  summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT AND MPL-2.0
-  categories:
-    - Unspecified
-- repo: fedora_43
-  subrepo: updates
-  srcname: kubernetes1.37
-  binnames:
-    - kubernetes1.37
-    - kubernetes1.37-kubeadm
-    - kubernetes1.37-client
-    - kubernetes1.37-systemd
-    - kubernetes1.37-debuginfo
-    - kubernetes1.37-debugsource
-  visiblename: kubernetes1.37
-  version: 1.37.2
-  origversion: 1.37.2-1.fc43
-  status: newest
-  summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT AND MPL-2.0
   categories:
     - Unspecified
 - repo: fedora_43
@@ -3185,6 +2951,180 @@
     - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT
   categories:
     - Unspecified
+- repo: fedora_43
+  subrepo: updates
+  srcname: kubernetes1.31
+  binnames:
+    - kubernetes1.31
+    - kubernetes1.31-kubeadm
+    - kubernetes1.31-client
+    - kubernetes1.31-systemd
+  visiblename: kubernetes1.31
+  version: 1.31.14
+  origversion: 1.31.14-1.fc43
+  status: legacy
+  summary: Open Source Production-Grade Container Scheduling And Management Platform
+  licenses:
+    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND ISC AND MIT
+  categories:
+    - Unspecified
+- repo: fedora_43
+  subrepo: updates
+  srcname: kubernetes1.32
+  binnames:
+    - kubernetes1.32
+    - kubernetes1.32-kubeadm
+    - kubernetes1.32-client
+    - kubernetes1.32-systemd
+  visiblename: kubernetes1.32
+  version: 1.32.13
+  origversion: 1.32.13-1.fc43
+  status: legacy
+  summary: Open Source Production-Grade Container Scheduling And Management Platform
+  licenses:
+    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND ISC AND MIT
+  categories:
+    - Unspecified
+- repo: fedora_43
+  subrepo: updates
+  srcname: kubernetes1.33
+  binnames:
+    - kubernetes1.33
+    - kubernetes1.33-kubeadm
+    - kubernetes1.33-client
+    - kubernetes1.33-systemd
+  visiblename: kubernetes1.33
+  version: 1.33.13
+  origversion: 1.33.13-1.fc43
+  status: legacy
+  summary: Open Source Production-Grade Container Scheduling And Management Platform
+  licenses:
+    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT
+  categories:
+    - Unspecified
+- repo: fedora_43
+  subrepo: updates
+  srcname: kubernetes1.34
+  binnames:
+    - kubernetes1.34
+    - kubernetes1.34-kubeadm
+    - kubernetes1.34-client
+    - kubernetes1.34-systemd
+  visiblename: kubernetes1.34
+  version: 1.34.13
+  origversion: 1.34.13-1.fc43
+  status: legacy
+  summary: Open Source Production-Grade Container Scheduling And Management Platform
+  licenses:
+    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT
+  categories:
+    - Unspecified
+- repo: fedora_43
+  subrepo: updates
+  srcname: kubernetes1.35
+  binnames:
+    - kubernetes1.35
+    - kubernetes1.35-kubeadm
+    - kubernetes1.35-client
+    - kubernetes1.35-systemd
+  visiblename: kubernetes1.35
+  version: 1.35.10
+  origversion: 1.35.10-1.fc43
+  status: legacy
+  summary: Open Source Production-Grade Container Scheduling And Management Platform
+  licenses:
+    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT AND MPL-2.0
+  categories:
+    - Unspecified
+- repo: fedora_43
+  subrepo: updates
+  srcname: kubernetes1.36
+  binnames:
+    - kubernetes1.36
+    - kubernetes1.36-kubeadm
+    - kubernetes1.36-client
+    - kubernetes1.36-systemd
+    - kubernetes1.36-debuginfo
+    - kubernetes1.36-debugsource
+  visiblename: kubernetes1.36
+  version: 1.36.6
+  origversion: 1.36.6-1.fc43
+  status: legacy
+  summary: Open Source Production-Grade Container Scheduling And Management Platform
+  licenses:
+    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT AND MPL-2.0
+  categories:
+    - Unspecified
+- repo: fedora_43
+  subrepo: updates
+  srcname: kubernetes1.37
+  binnames:
+    - kubernetes1.37
+    - kubernetes1.37-kubeadm
+    - kubernetes1.37-client
+    - kubernetes1.37-systemd
+    - kubernetes1.37-debuginfo
+    - kubernetes1.37-debugsource
+  visiblename: kubernetes1.37
+  version: 1.37.2
+  origversion: 1.37.2-1.fc43
+  status: newest
+  summary: Open Source Production-Grade Container Scheduling And Management Platform
+  licenses:
+    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT AND MPL-2.0
+  categories:
+    - Unspecified
+- repo: fedora_44
+  subrepo: release
+  srcname: kubernetes1.33
+  binnames:
+    - kubernetes1.33
+    - kubernetes1.33-kubeadm
+    - kubernetes1.33-client
+    - kubernetes1.33-systemd
+  visiblename: kubernetes1.33
+  version: 1.33.10
+  origversion: 1.33.10-1.fc44
+  status: legacy
+  summary: Open Source Production-Grade Container Scheduling And Management Platform
+  licenses:
+    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT
+  categories:
+    - Unspecified
+- repo: fedora_44
+  subrepo: release
+  srcname: kubernetes1.34
+  binnames:
+    - kubernetes1.34
+    - kubernetes1.34-kubeadm
+    - kubernetes1.34-client
+    - kubernetes1.34-systemd
+  visiblename: kubernetes1.34
+  version: 1.34.6
+  origversion: 1.34.6-1.fc44
+  status: legacy
+  summary: Open Source Production-Grade Container Scheduling And Management Platform
+  licenses:
+    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT
+  categories:
+    - Unspecified
+- repo: fedora_44
+  subrepo: release
+  srcname: kubernetes1.35
+  binnames:
+    - kubernetes1.35
+    - kubernetes1.35-kubeadm
+    - kubernetes1.35-client
+    - kubernetes1.35-systemd
+  visiblename: kubernetes1.35
+  version: 1.35.3
+  origversion: 1.35.3-1.fc44
+  status: legacy
+  summary: Open Source Production-Grade Container Scheduling And Management Platform
+  licenses:
+    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT AND MPL-2.0
+  categories:
+    - Unspecified
 - repo: fedora_44
   subrepo: updates
   srcname: kubernetes1.33
@@ -3202,17 +3142,6 @@
     - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT
   categories:
     - Unspecified
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: kubernetes
-  binname: kubelet
-  visiblename: kubelet
-  version: 1.37.2
-  origversion: 1.37.2-1
-  status: newest
-  summary: An agent that runs on each node in a Kubernetes cluster making sure that containers are running in a Pod
-  licenses:
-    - Apache-2.0
 - repo: fedora_44
   subrepo: updates
   srcname: kubernetes1.34
@@ -3285,7 +3214,7 @@
     - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT AND MPL-2.0
   categories:
     - Unspecified
-- repo: fedora_44
+- repo: fedora_45
   subrepo: release
   srcname: kubernetes1.33
   binnames:
@@ -3294,15 +3223,29 @@
     - kubernetes1.33-client
     - kubernetes1.33-systemd
   visiblename: kubernetes1.33
-  version: 1.33.10
-  origversion: 1.33.10-1.fc44
+  version: 1.33.13
+  origversion: 1.33.13-2.fc45
   status: legacy
   summary: Open Source Production-Grade Container Scheduling And Management Platform
   licenses:
     - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT
   categories:
     - Unspecified
-- repo: fedora_44
+- repo: nix_stable_24_05
+  srcname: kubectl
+  visiblename: kubectl
+  version: 1.30.1
+  origversion: null
+  status: outdated
+  summary: Kubernetes CLI
+  maintainers:
+    - write@ownrisk.dk
+    - jaka@x-truder.net
+    - mail@saschagrunert.de
+    - sbrofeldt@gmail.com
+  licenses:
+    - Apache-2.0
+- repo: fedora_45
   subrepo: release
   srcname: kubernetes1.34
   binnames:
@@ -3311,15 +3254,15 @@
     - kubernetes1.34-client
     - kubernetes1.34-systemd
   visiblename: kubernetes1.34
-  version: 1.34.6
-  origversion: 1.34.6-1.fc44
+  version: 1.34.11
+  origversion: 1.34.11-3.fc45
   status: legacy
   summary: Open Source Production-Grade Container Scheduling And Management Platform
   licenses:
     - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT
   categories:
     - Unspecified
-- repo: fedora_44
+- repo: fedora_45
   subrepo: release
   srcname: kubernetes1.35
   binnames:
@@ -3328,8 +3271,46 @@
     - kubernetes1.35-client
     - kubernetes1.35-systemd
   visiblename: kubernetes1.35
-  version: 1.35.3
-  origversion: 1.35.3-1.fc44
+  version: 1.35.8
+  origversion: 1.35.8-3.fc45
+  status: legacy
+  summary: Open Source Production-Grade Container Scheduling And Management Platform
+  licenses:
+    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT AND MPL-2.0
+  categories:
+    - Unspecified
+- repo: fedora_45
+  subrepo: release
+  srcname: kubernetes1.36
+  binnames:
+    - kubernetes1.36
+    - kubernetes1.36-kubeadm
+    - kubernetes1.36-client
+    - kubernetes1.36-systemd
+    - kubernetes1.36-debuginfo
+    - kubernetes1.36-debugsource
+  visiblename: kubernetes1.36
+  version: 1.36.4
+  origversion: 1.36.4-2.fc45
+  status: legacy
+  summary: Open Source Production-Grade Container Scheduling And Management Platform
+  licenses:
+    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT AND MPL-2.0
+  categories:
+    - Unspecified
+- repo: fedora_45
+  subrepo: release
+  srcname: kubernetes1.37
+  binnames:
+    - kubernetes1.37
+    - kubernetes1.37-kubeadm
+    - kubernetes1.37-client
+    - kubernetes1.37-systemd
+    - kubernetes1.37-debuginfo
+    - kubernetes1.37-debugsource
+  visiblename: kubernetes1.37
+  version: 1.37.0
+  origversion: 1.37.0-3.fc45
   status: legacy
   summary: Open Source Production-Grade Container Scheduling And Management Platform
   licenses:
@@ -3403,112 +3384,6 @@
   version: 1.37.2
   origversion: 1.37.2-1.fc45
   status: newest
-  summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT AND MPL-2.0
-  categories:
-    - Unspecified
-- repo: fedora_45
-  subrepo: release
-  srcname: kubernetes1.33
-  binnames:
-    - kubernetes1.33
-    - kubernetes1.33-kubeadm
-    - kubernetes1.33-client
-    - kubernetes1.33-systemd
-  visiblename: kubernetes1.33
-  version: 1.33.13
-  origversion: 1.33.13-2.fc45
-  status: legacy
-  summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT
-  categories:
-    - Unspecified
-- repo: fedora_45
-  subrepo: release
-  srcname: kubernetes1.34
-  binnames:
-    - kubernetes1.34
-    - kubernetes1.34-kubeadm
-    - kubernetes1.34-client
-    - kubernetes1.34-systemd
-  visiblename: kubernetes1.34
-  version: 1.34.11
-  origversion: 1.34.11-3.fc45
-  status: legacy
-  summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT
-  categories:
-    - Unspecified
-- repo: fedora_45
-  subrepo: release
-  srcname: kubernetes1.35
-  binnames:
-    - kubernetes1.35
-    - kubernetes1.35-kubeadm
-    - kubernetes1.35-client
-    - kubernetes1.35-systemd
-  visiblename: kubernetes1.35
-  version: 1.35.8
-  origversion: 1.35.8-3.fc45
-  status: legacy
-  summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT AND MPL-2.0
-  categories:
-    - Unspecified
-- repo: fedora_45
-  subrepo: release
-  srcname: kubernetes1.36
-  binnames:
-    - kubernetes1.36
-    - kubernetes1.36-kubeadm
-    - kubernetes1.36-client
-    - kubernetes1.36-systemd
-    - kubernetes1.36-debuginfo
-    - kubernetes1.36-debugsource
-  visiblename: kubernetes1.36
-  version: 1.36.4
-  origversion: 1.36.4-2.fc45
-  status: legacy
-  summary: Open Source Production-Grade Container Scheduling And Management Platform
-  licenses:
-    - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT AND MPL-2.0
-  categories:
-    - Unspecified
-- repo: gentoo
-  srcname: sys-cluster/kube-scheduler
-  visiblename: sys-cluster/kube-scheduler
-  version: 1.35.0
-  origversion: null
-  status: legacy
-  summary: Kubernetes Scheduler
-  maintainers:
-    - williamh@gentoo.org
-  licenses:
-    - Apache-2.0
-    - BSD
-    - BSD-2
-    - ISC
-    - MIT
-  categories:
-    - sys-cluster
-- repo: fedora_45
-  subrepo: release
-  srcname: kubernetes1.37
-  binnames:
-    - kubernetes1.37
-    - kubernetes1.37-kubeadm
-    - kubernetes1.37-client
-    - kubernetes1.37-systemd
-    - kubernetes1.37-debuginfo
-    - kubernetes1.37-debugsource
-  visiblename: kubernetes1.37
-  version: 1.37.0
-  origversion: 1.37.0-3.fc45
-  status: legacy
   summary: Open Source Production-Grade Container Scheduling And Management Platform
   licenses:
     - Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-HP AND CC-BY-4.0 AND ISC AND MIT AND MPL-2.0
@@ -3753,17 +3628,57 @@
     - MIT
   categories:
     - sys-cluster
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: kubernetes
-  binname: kube-proxy
-  visiblename: kube-proxy
-  version: 1.37.2
-  origversion: 1.37.2-1
-  status: newest
-  summary: Kubernetes network proxy that runs on each node
+- repo: gentoo
+  srcname: sys-cluster/kube-proxy
+  visiblename: sys-cluster/kube-proxy
+  version: 1.35.3
+  origversion: null
+  status: legacy
+  summary: Kubernetes Proxy service
+  maintainers:
+    - williamh@gentoo.org
   licenses:
     - Apache-2.0
+    - BSD
+    - BSD-2
+    - ISC
+    - MIT
+  categories:
+    - sys-cluster
+- repo: gentoo
+  srcname: sys-cluster/kube-proxy
+  visiblename: sys-cluster/kube-proxy
+  version: 1.35.0
+  origversion: null
+  status: legacy
+  summary: Kubernetes Proxy service
+  maintainers:
+    - williamh@gentoo.org
+  licenses:
+    - Apache-2.0
+    - BSD
+    - BSD-2
+    - ISC
+    - MIT
+  categories:
+    - sys-cluster
+- repo: gentoo
+  srcname: sys-cluster/kube-scheduler
+  visiblename: sys-cluster/kube-scheduler
+  version: 1.35.0
+  origversion: null
+  status: legacy
+  summary: Kubernetes Scheduler
+  maintainers:
+    - williamh@gentoo.org
+  licenses:
+    - Apache-2.0
+    - BSD
+    - BSD-2
+    - ISC
+    - MIT
+  categories:
+    - sys-cluster
 - repo: gentoo
   srcname: sys-cluster/kube-controller-manager
   visiblename: sys-cluster/kube-controller-manager
@@ -3781,6 +3696,17 @@
     - MIT
   categories:
     - sys-cluster
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: kubernetes
+  binname: kube-proxy
+  visiblename: kube-proxy
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: Kubernetes network proxy that runs on each node
+  licenses:
+    - Apache-2.0
 - repo: gentoo
   srcname: sys-cluster/kubeadm
   visiblename: sys-cluster/kubeadm
@@ -3934,6 +3860,17 @@
     - MIT
   categories:
     - sys-cluster
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: kubernetes
+  binname: kube-controller-manager
+  visiblename: kube-controller-manager
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: Kubernetes control plane component that runs controller processes
+  licenses:
+    - Apache-2.0
 - repo: gentoo
   srcname: sys-cluster/kubectl
   visiblename: sys-cluster/kubectl
@@ -4044,17 +3981,6 @@
     - ocsi@debian.org
   categories:
     - misc
-- repo: manjaro_testing
-  subrepo: extra
-  srcname: kubernetes
-  binname: kubeadm
-  visiblename: kubeadm
-  version: 1.37.2
-  origversion: 1.37.2-1
-  status: newest
-  summary: A tool for quickly installing Kubernetes and setting up a secure cluster
-  licenses:
-    - Apache-2.0
 - repo: liguros_stable
   srcname: sys-cluster/kube-proxy
   visiblename: sys-cluster/kube-proxy
@@ -4419,19 +4345,6 @@
   origversion: null
   status: legacy
   summary: Kubernetes Proxy service
-  maintainers:
-    - williamh@gentoo.org
-  licenses:
-    - Apache-2.0
-  categories:
-    - sys-cluster
-- repo: liguros_stable
-  srcname: sys-cluster/kubectl
-  visiblename: sys-cluster/kubectl
-  version: 1.31.11
-  origversion: null
-  status: legacy
-  summary: CLI to run commands against Kubernetes clusters
   maintainers:
     - williamh@gentoo.org
   licenses:
@@ -4536,6 +4449,32 @@
   origversion: null
   status: legacy
   summary: Kubernetes API server
+  maintainers:
+    - williamh@gentoo.org
+  licenses:
+    - Apache-2.0
+  categories:
+    - sys-cluster
+- repo: liguros_stable
+  srcname: sys-cluster/kubelet
+  visiblename: sys-cluster/kubelet
+  version: 1.31.12
+  origversion: null
+  status: legacy
+  summary: Kubernetes Node Agent
+  maintainers:
+    - williamh@gentoo.org
+  licenses:
+    - Apache-2.0
+  categories:
+    - sys-cluster
+- repo: liguros_stable
+  srcname: sys-cluster/kube-controller-manager
+  visiblename: sys-cluster/kube-controller-manager
+  version: 1.31.12
+  origversion: null
+  status: legacy
+  summary: Kubernetes Controller Manager
   maintainers:
     - williamh@gentoo.org
   licenses:
@@ -4553,32 +4492,6 @@
   summary: A command line tool for communicating with a Kubernetes API server
   licenses:
     - Apache-2.0
-- repo: liguros_stable
-  srcname: sys-cluster/kubelet
-  visiblename: sys-cluster/kubelet
-  version: 1.31.12
-  origversion: null
-  status: legacy
-  summary: Kubernetes Node Agent
-  maintainers:
-    - williamh@gentoo.org
-  licenses:
-    - Apache-2.0
-  categories:
-    - sys-cluster
-- repo: liguros_stable
-  srcname: sys-cluster/kube-controller-manager
-  visiblename: sys-cluster/kube-controller-manager
-  version: 1.31.12
-  origversion: null
-  status: legacy
-  summary: Kubernetes Controller Manager
-  maintainers:
-    - williamh@gentoo.org
-  licenses:
-    - Apache-2.0
-  categories:
-    - sys-cluster
 - repo: liguros_stable
   srcname: sys-cluster/kube-scheduler
   visiblename: sys-cluster/kube-scheduler
@@ -5266,9 +5179,9 @@
     - sysutils
 - repo: macports
   srcname: sysutils/kubectl
-  binname: kubectl-1.36
-  visiblename: kubectl-1.36
-  version: 1.36.6
+  binname: kubectl-1.34
+  visiblename: kubectl-1.34
+  version: 1.34.13
   origversion: null
   status: legacy
   summary: Kubernetes cluster CLI
@@ -5281,9 +5194,9 @@
     - sysutils
 - repo: macports
   srcname: sysutils/kubectl
-  binname: kubectl-1.34
-  visiblename: kubectl-1.34
-  version: 1.34.13
+  binname: kubectl-1.36
+  visiblename: kubectl-1.36
+  version: 1.36.6
   origversion: null
   status: legacy
   summary: Kubernetes cluster CLI
@@ -5324,11 +5237,35 @@
     - Apache-2
   categories:
     - sysutils
+- repo: scoop
+  subrepo: main
+  binname: kubelet
+  visiblename: kubelet
+  version: 1.37.2
+  origversion: null
+  status: newest
+  licenses:
+    - Apache-2.0
 - repo: macports
   srcname: sysutils/kubectl
   binname: kubectl-1.30
   visiblename: kubectl-1.30
   version: 1.30.14
+  origversion: null
+  status: legacy
+  summary: Kubernetes cluster CLI
+  maintainers:
+    - patarra@github
+    - herbygillot@github
+  licenses:
+    - Apache-2
+  categories:
+    - sysutils
+- repo: macports
+  srcname: sysutils/kubectl
+  binname: kubectl-1.28
+  visiblename: kubectl-1.28
+  version: 1.28.15
   origversion: null
   status: legacy
   summary: Kubernetes cluster CLI
@@ -5354,37 +5291,11 @@
     - Apache-2
   categories:
     - sysutils
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: kubernetes
-  binname: kube-scheduler
-  visiblename: kube-scheduler
-  version: 1.37.2
-  origversion: 1.37.2-1
-  status: newest
-  summary: Kubernetes control plane component watching over pods on nodes
-  licenses:
-    - Apache-2.0
 - repo: macports
   srcname: sysutils/kubectl
   binname: kubectl-1.29
   visiblename: kubectl-1.29
   version: 1.29.15
-  origversion: null
-  status: legacy
-  summary: Kubernetes cluster CLI
-  maintainers:
-    - patarra@github
-    - herbygillot@github
-  licenses:
-    - Apache-2
-  categories:
-    - sysutils
-- repo: macports
-  srcname: sysutils/kubectl
-  binname: kubectl-1.28
-  visiblename: kubectl-1.28
-  version: 1.28.15
   origversion: null
   status: legacy
   summary: Kubernetes cluster CLI
@@ -5440,15 +5351,13 @@
     - Apache-2
   categories:
     - sysutils
-- repo: manjaro_testing
-  subrepo: extra
-  srcname: kubernetes
-  binname: kube-scheduler
-  visiblename: kube-scheduler
+- repo: scoop
+  subrepo: main
+  binname: kubeadm
+  visiblename: kubeadm
   version: 1.37.2
-  origversion: 1.37.2-1
+  origversion: null
   status: newest
-  summary: Kubernetes control plane component watching over pods on nodes
   licenses:
     - Apache-2.0
 - repo: mageia_10
@@ -5492,43 +5401,10 @@
   srcname: kubernetes
   binname: kube-proxy
   visiblename: kube-proxy
-  version: 1.37.1
-  origversion: 1.37.1-1
-  status: outdated
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
   summary: Kubernetes network proxy that runs on each node
-  licenses:
-    - Apache-2.0
-- repo: manjaro_stable
-  subrepo: extra
-  srcname: kubernetes
-  binname: kube-apiserver
-  visiblename: kube-apiserver
-  version: 1.37.1
-  origversion: 1.37.1-1
-  status: outdated
-  summary: Kubernetes control plane component exposing the Kubernetes API
-  licenses:
-    - Apache-2.0
-- repo: manjaro_stable
-  subrepo: extra
-  srcname: kubernetes
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.37.1
-  origversion: 1.37.1-1
-  status: outdated
-  summary: A command line tool for communicating with a Kubernetes API server
-  licenses:
-    - Apache-2.0
-- repo: manjaro_stable
-  subrepo: extra
-  srcname: kubernetes
-  binname: kubelet
-  visiblename: kubelet
-  version: 1.37.1
-  origversion: 1.37.1-1
-  status: outdated
-  summary: An agent that runs on each node in a Kubernetes cluster making sure that containers are running in a Pod
   licenses:
     - Apache-2.0
 - repo: manjaro_stable
@@ -5536,9 +5412,9 @@
   srcname: kubernetes
   binname: kube-scheduler
   visiblename: kube-scheduler
-  version: 1.37.1
-  origversion: 1.37.1-1
-  status: outdated
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
   summary: Kubernetes control plane component watching over pods on nodes
   licenses:
     - Apache-2.0
@@ -5547,21 +5423,10 @@
   srcname: kubernetes
   binname: kubernetes-control-plane-common
   visiblename: kubernetes-control-plane-common
-  version: 1.37.1
-  origversion: 1.37.1-1
-  status: outdated
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
   summary: Common files for Kubernetes control plane packages
-  licenses:
-    - Apache-2.0
-- repo: manjaro_stable
-  subrepo: extra
-  srcname: kubernetes
-  binname: kube-controller-manager
-  visiblename: kube-controller-manager
-  version: 1.37.1
-  origversion: 1.37.1-1
-  status: outdated
-  summary: Kubernetes control plane component that runs controller processes
   licenses:
     - Apache-2.0
 - repo: manjaro_stable
@@ -5569,10 +5434,54 @@
   srcname: kubernetes
   binname: kubeadm
   visiblename: kubeadm
-  version: 1.37.1
-  origversion: 1.37.1-1
-  status: outdated
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
   summary: A tool for quickly installing Kubernetes and setting up a secure cluster
+  licenses:
+    - Apache-2.0
+- repo: manjaro_stable
+  subrepo: extra
+  srcname: kubernetes
+  binname: kube-controller-manager
+  visiblename: kube-controller-manager
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: Kubernetes control plane component that runs controller processes
+  licenses:
+    - Apache-2.0
+- repo: manjaro_stable
+  subrepo: extra
+  srcname: kubernetes
+  binname: kube-apiserver
+  visiblename: kube-apiserver
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: Kubernetes control plane component exposing the Kubernetes API
+  licenses:
+    - Apache-2.0
+- repo: manjaro_stable
+  subrepo: extra
+  srcname: kubernetes
+  binname: kubelet
+  visiblename: kubelet
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: An agent that runs on each node in a Kubernetes cluster making sure that containers are running in a Pod
+  licenses:
+    - Apache-2.0
+- repo: manjaro_stable
+  subrepo: extra
+  srcname: kubernetes
+  binname: kubectl
+  visiblename: kubectl
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: A command line tool for communicating with a Kubernetes API server
   licenses:
     - Apache-2.0
 - repo: manjaro_testing
@@ -5595,6 +5504,28 @@
   origversion: 1.37.2-1
   status: newest
   summary: Kubernetes control plane component that runs controller processes
+  licenses:
+    - Apache-2.0
+- repo: manjaro_testing
+  subrepo: extra
+  srcname: kubernetes
+  binname: kubeadm
+  visiblename: kubeadm
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: A tool for quickly installing Kubernetes and setting up a secure cluster
+  licenses:
+    - Apache-2.0
+- repo: manjaro_testing
+  subrepo: extra
+  srcname: kubernetes
+  binname: kube-scheduler
+  visiblename: kube-scheduler
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: Kubernetes control plane component watching over pods on nodes
   licenses:
     - Apache-2.0
 - repo: manjaro_testing
@@ -5628,6 +5559,75 @@
   origversion: 1.37.2-1
   status: newest
   summary: Kubernetes control plane component exposing the Kubernetes API
+  licenses:
+    - Apache-2.0
+- repo: manjaro_testing
+  subrepo: extra
+  srcname: kubernetes
+  binname: kube-proxy
+  visiblename: kube-proxy
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: Kubernetes network proxy that runs on each node
+  licenses:
+    - Apache-2.0
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: kubernetes
+  binname: kubeadm
+  visiblename: kubeadm
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: A tool for quickly installing Kubernetes and setting up a secure cluster
+  licenses:
+    - Apache-2.0
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: kubernetes
+  binname: kube-scheduler
+  visiblename: kube-scheduler
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: Kubernetes control plane component watching over pods on nodes
+  licenses:
+    - Apache-2.0
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: kubernetes
+  binname: kubernetes-control-plane-common
+  visiblename: kubernetes-control-plane-common
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: Common files for Kubernetes control plane packages
+  licenses:
+    - Apache-2.0
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: kubernetes
+  binname: kubelet
+  visiblename: kubelet
+  version: 1.37.2
+  origversion: 1.37.2-1
+  status: newest
+  summary: An agent that runs on each node in a Kubernetes cluster making sure that containers are running in a Pod
+  licenses:
+    - Apache-2.0
+- repo: nix_stable_24_05
+  srcname: kubectl-convert
+  visiblename: kubectl
+  version: 1.30.1
+  origversion: null
+  status: outdated
+  summary: Kubernetes CLI
+  maintainers:
+    - write@ownrisk.dk
+    - jaka@x-truder.net
+    - mail@saschagrunert.de
+    - sbrofeldt@gmail.com
   licenses:
     - Apache-2.0
 - repo: nix_stable_24_05
@@ -5877,15 +5877,6 @@
     - ASL 2.0
   categories:
     - Unspecified
-- repo: wakemeops
-  subrepo: devops
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.34.2
-  origversion: 1.34.2-1~ops2deb
-  status: legacy
-  maintainers:
-    - ops2deb@upciti.com
 - repo: openmandriva_rolling
   subrepo: main/release
   srcname: kubernetes
@@ -6202,23 +6193,6 @@
     - Apache-2.0
   categories:
     - System/Management
-- repo: parrot
-  subrepo: parrot-updates/main
-  srcname: kubernetes
-  binnames:
-    - kubectl
-    - golang-k8s-kubectl-dev
-    - kubernetes-client
-  visiblename: kubernetes
-  version: 1.32.3
-  origversion: 1.32.3+ds-2
-  status: outdated
-  maintainers:
-    - team+kubernetes@tracker.debian.org
-    - arthurbdiniz@gmail.com
-    - ocsi@debian.org
-  categories:
-    - misc
 - repo: opensuse_leap_15_6
   subrepo: updates/sle
   srcname: kubernetes1.25
@@ -6429,23 +6403,6 @@
     - Apache-2.0
   categories:
     - System/Management
-- repo: pureos_landing
-  subrepo: landing/main
-  srcname: kubernetes
-  binnames:
-    - golang-k8s-kubectl-dev
-    - kubectl
-    - kubernetes-client
-  visiblename: kubernetes
-  version: 1.32.3
-  origversion: 1.32.3+ds-2
-  status: outdated
-  maintainers:
-    - team+kubernetes@tracker.debian.org
-    - arthurbdiniz@gmail.com
-    - ocsi@debian.org
-  categories:
-    - golang
 - repo: opensuse_tumbleweed
   subrepo: src-oss
   srcname: kubernetes1.37
@@ -6639,7 +6596,7 @@
   licenses:
     - Apache-2.0
 - repo: parrot
-  subrepo: parrot/main
+  subrepo: parrot-updates/main
   srcname: kubernetes
   binnames:
     - kubectl
@@ -6661,6 +6618,23 @@
   version: 1.33.2
   origversion: 1.33.2-1
   status: outdated
+- repo: pureos_landing
+  subrepo: landing/main
+  srcname: kubernetes
+  binnames:
+    - golang-k8s-kubectl-dev
+    - kubectl
+    - kubernetes-client
+  visiblename: kubernetes
+  version: 1.32.3
+  origversion: 1.32.3+ds-2
+  status: outdated
+  maintainers:
+    - team+kubernetes@tracker.debian.org
+    - arthurbdiniz@gmail.com
+    - ocsi@debian.org
+  categories:
+    - golang
 - repo: raspbian_stable
   subrepo: main
   srcname: kubernetes
@@ -6737,43 +6711,6 @@
     - ASL 2.0
   categories:
     - Development/Other
-- repo: scoop
-  subrepo: main
-  binname: kubelet
-  visiblename: kubelet
-  version: 1.37.2
-  origversion: null
-  status: newest
-  licenses:
-    - Apache-2.0
-- repo: scoop
-  subrepo: main
-  binname: kubeadm
-  visiblename: kubeadm
-  version: 1.37.2
-  origversion: null
-  status: newest
-  licenses:
-    - Apache-2.0
-- repo: scoop
-  subrepo: main
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.37.2
-  origversion: null
-  status: newest
-  licenses:
-    - Apache-2.0
-- repo: slackbuilds
-  srcname: network/kubectl
-  visiblename: network/kubectl
-  version: 1.37.2
-  origversion: null
-  status: newest
-  maintainers:
-    - ricardsonwilliams+slackbuild@gmail.com
-  categories:
-    - network
 - repo: solus
   srcname: kubectl
   binname: kubectl
@@ -6929,6 +6866,78 @@
   subrepo: devops
   binname: kubectl
   visiblename: kubectl
+  version: 1.36.1
+  origversion: 1.36.1-1~ops2deb
+  status: legacy
+  maintainers:
+    - ops2deb@upciti.com
+- repo: wakemeops
+  subrepo: devops
+  binname: kubectl
+  visiblename: kubectl
+  version: 1.36.0
+  origversion: 1.36.0-1~ops2deb
+  status: legacy
+  maintainers:
+    - ops2deb@upciti.com
+- repo: wakemeops
+  subrepo: devops
+  binname: kubectl
+  visiblename: kubectl
+  version: 1.35.3
+  origversion: 1.35.3-1~ops2deb
+  status: legacy
+  maintainers:
+    - ops2deb@upciti.com
+- repo: wakemeops
+  subrepo: devops
+  binname: kubectl
+  visiblename: kubectl
+  version: 1.35.2
+  origversion: 1.35.2-1~ops2deb
+  status: legacy
+  maintainers:
+    - ops2deb@upciti.com
+- repo: wakemeops
+  subrepo: devops
+  binname: kubectl
+  visiblename: kubectl
+  version: 1.35.1
+  origversion: 1.35.1-1~ops2deb
+  status: legacy
+  maintainers:
+    - ops2deb@upciti.com
+- repo: wakemeops
+  subrepo: devops
+  binname: kubectl
+  visiblename: kubectl
+  version: 1.35.0
+  origversion: 1.35.0-1~ops2deb
+  status: legacy
+  maintainers:
+    - ops2deb@upciti.com
+- repo: wakemeops
+  subrepo: devops
+  binname: kubectl
+  visiblename: kubectl
+  version: 1.34.3
+  origversion: 1.34.3-1~ops2deb
+  status: legacy
+  maintainers:
+    - ops2deb@upciti.com
+- repo: wakemeops
+  subrepo: devops
+  binname: kubectl
+  visiblename: kubectl
+  version: 1.34.2
+  origversion: 1.34.2-1~ops2deb
+  status: legacy
+  maintainers:
+    - ops2deb@upciti.com
+- repo: wakemeops
+  subrepo: devops
+  binname: kubectl
+  visiblename: kubectl
   version: 1.34.1
   origversion: 1.34.1-1~ops2deb
   status: legacy
@@ -6940,15 +6949,6 @@
   visiblename: kubectl
   version: 1.34.0
   origversion: 1.34.0-1~ops2deb
-  status: legacy
-  maintainers:
-    - ops2deb@upciti.com
-- repo: wakemeops
-  subrepo: devops
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.33.4
-  origversion: 1.33.4-1~ops2deb
   status: legacy
   maintainers:
     - ops2deb@upciti.com
@@ -7136,64 +7136,8 @@
   subrepo: devops
   binname: kubectl
   visiblename: kubectl
-  version: 1.26.2
-  origversion: 1.26.2-1~ops2deb
-  status: legacy
-  maintainers:
-    - ops2deb@upciti.com
-  vulnerable: true
-- repo: wakemeops
-  subrepo: devops
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.26.1
-  origversion: 1.26.1-1~ops2deb
-  status: legacy
-  maintainers:
-    - ops2deb@upciti.com
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: updates/sle
-  srcname: kubernetes1.23
-  visiblename: kubernetes1.23
-  version: 1.23.17
-  origversion: 1.23.17-150500.3.3.1
-  status: legacy
-  summary: Container Scheduling and Management
-  licenses:
-    - Apache-2.0
-  categories:
-    - System/Management
-  vulnerable: true
-- repo: wakemeops
-  subrepo: devops
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.26.0
-  origversion: 1.26.0-1~ops2deb
-  status: legacy
-  maintainers:
-    - ops2deb@upciti.com
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: updates/sle
-  srcname: kubernetes1.23
-  visiblename: kubernetes1.23
-  version: 1.23.17
-  origversion: 1.23.17-150500.3.6.1
-  status: legacy
-  summary: Container Scheduling and Management
-  licenses:
-    - Apache-2.0
-  categories:
-    - System/Management
-  vulnerable: true
-- repo: wakemeops
-  subrepo: devops
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.27.0
-  origversion: 1.27.0-1~ops2deb
+  version: 1.28.2
+  origversion: 1.28.2-1~ops2deb
   status: legacy
   maintainers:
     - ops2deb@upciti.com
@@ -7473,21 +7417,18 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: macports
-  srcname: sysutils/kubectl
-  binname: kubectl-1.24
-  visiblename: kubectl-1.24
-  version: 1.24.17
-  origversion: null
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: kubernetes
+  visiblename: kubernetes
+  version: 1.18.4
+  origversion: 1.18.4-lp155.2.4
   status: legacy
-  summary: Kubernetes cluster CLI
-  maintainers:
-    - patarra@github
-    - herbygillot@github
+  summary: Container Scheduling and Management
   licenses:
-    - Apache-2
+    - Apache-2.0
   categories:
-    - sysutils
+    - System/Management
   vulnerable: true
 - repo: macports
   srcname: sysutils/kubectl
@@ -7507,9 +7448,25 @@
   vulnerable: true
 - repo: macports
   srcname: sysutils/kubectl
-  binname: kubectl-1.20
-  visiblename: kubectl-1.20
-  version: 1.20.15
+  binname: kubectl-1.22
+  visiblename: kubectl-1.22
+  version: 1.22.17
+  origversion: null
+  status: legacy
+  summary: Kubernetes cluster CLI
+  maintainers:
+    - patarra@github
+    - herbygillot@github
+  licenses:
+    - Apache-2
+  categories:
+    - sysutils
+  vulnerable: true
+- repo: macports
+  srcname: sysutils/kubectl
+  binname: kubectl-1.24
+  visiblename: kubectl-1.24
+  version: 1.24.17
   origversion: null
   status: legacy
   summary: Kubernetes cluster CLI
@@ -7539,9 +7496,41 @@
   vulnerable: true
 - repo: macports
   srcname: sysutils/kubectl
-  binname: kubectl-1.22
-  visiblename: kubectl-1.22
-  version: 1.22.17
+  binname: kubectl-1.20
+  visiblename: kubectl-1.20
+  version: 1.20.15
+  origversion: null
+  status: legacy
+  summary: Kubernetes cluster CLI
+  maintainers:
+    - patarra@github
+    - herbygillot@github
+  licenses:
+    - Apache-2
+  categories:
+    - sysutils
+  vulnerable: true
+- repo: macports
+  srcname: sysutils/kubectl
+  binname: kubectl-1.17
+  visiblename: kubectl-1.17
+  version: 1.17.17
+  origversion: null
+  status: legacy
+  summary: Kubernetes cluster CLI
+  maintainers:
+    - patarra@github
+    - herbygillot@github
+  licenses:
+    - Apache-2
+  categories:
+    - sysutils
+  vulnerable: true
+- repo: macports
+  srcname: sysutils/kubectl
+  binname: kubectl-1.16
+  visiblename: kubectl-1.16
+  version: 1.16.15
   origversion: null
   status: legacy
   summary: Kubernetes cluster CLI
@@ -7587,9 +7576,25 @@
   vulnerable: true
 - repo: macports
   srcname: sysutils/kubectl
-  binname: kubectl-1.17
-  visiblename: kubectl-1.17
-  version: 1.17.17
+  binname: kubectl-1.15
+  visiblename: kubectl-1.15
+  version: 1.15.12
+  origversion: null
+  status: legacy
+  summary: Kubernetes cluster CLI
+  maintainers:
+    - patarra@github
+    - herbygillot@github
+  licenses:
+    - Apache-2
+  categories:
+    - sysutils
+  vulnerable: true
+- repo: macports
+  srcname: sysutils/kubectl
+  binname: kubectl-1.13
+  visiblename: kubectl-1.13
+  version: 1.13.12
   origversion: null
   status: legacy
   summary: Kubernetes cluster CLI
@@ -7619,57 +7624,9 @@
   vulnerable: true
 - repo: macports
   srcname: sysutils/kubectl
-  binname: kubectl-1.16
-  visiblename: kubectl-1.16
-  version: 1.16.15
-  origversion: null
-  status: legacy
-  summary: Kubernetes cluster CLI
-  maintainers:
-    - patarra@github
-    - herbygillot@github
-  licenses:
-    - Apache-2
-  categories:
-    - sysutils
-  vulnerable: true
-- repo: macports
-  srcname: sysutils/kubectl
-  binname: kubectl-1.15
-  visiblename: kubectl-1.15
-  version: 1.15.12
-  origversion: null
-  status: legacy
-  summary: Kubernetes cluster CLI
-  maintainers:
-    - patarra@github
-    - herbygillot@github
-  licenses:
-    - Apache-2
-  categories:
-    - sysutils
-  vulnerable: true
-- repo: macports
-  srcname: sysutils/kubectl
   binname: kubectl-1.11
   visiblename: kubectl-1.11
   version: 1.11.10
-  origversion: null
-  status: legacy
-  summary: Kubernetes cluster CLI
-  maintainers:
-    - patarra@github
-    - herbygillot@github
-  licenses:
-    - Apache-2
-  categories:
-    - sysutils
-  vulnerable: true
-- repo: macports
-  srcname: sysutils/kubectl
-  binname: kubectl-1.13
-  visiblename: kubectl-1.13
-  version: 1.13.12
   origversion: null
   status: legacy
   summary: Kubernetes cluster CLI
@@ -7712,19 +7669,6 @@
     - Apache-2
   categories:
     - sysutils
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: kubernetes
-  visiblename: kubernetes
-  version: 1.18.4
-  origversion: 1.18.4-lp155.2.4
-  status: legacy
-  summary: Container Scheduling and Management
-  licenses:
-    - Apache-2.0
-  categories:
-    - System/Management
   vulnerable: true
 - repo: opensuse_leap_15_5
   subrepo: main/oss
@@ -7843,6 +7787,16 @@
   categories:
     - System/Management
   vulnerable: true
+- repo: wakemeops
+  subrepo: devops
+  binname: kubectl
+  visiblename: kubectl
+  version: 1.28.3
+  origversion: 1.28.3-1~ops2deb
+  status: legacy
+  maintainers:
+    - ops2deb@upciti.com
+  vulnerable: true
 - repo: opensuse_leap_15_5
   subrepo: updates/sle
   srcname: kubernetes1.18
@@ -7888,6 +7842,32 @@
   visiblename: kubernetes1.23
   version: 1.23.17
   origversion: 1.23.17-150500.3.18.1
+  status: legacy
+  summary: Container Scheduling and Management
+  licenses:
+    - Apache-2.0
+  categories:
+    - System/Management
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: updates/sle
+  srcname: kubernetes1.23
+  visiblename: kubernetes1.23
+  version: 1.23.17
+  origversion: 1.23.17-150500.3.3.1
+  status: legacy
+  summary: Container Scheduling and Management
+  licenses:
+    - Apache-2.0
+  categories:
+    - System/Management
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: updates/sle
+  srcname: kubernetes1.23
+  visiblename: kubernetes1.23
+  version: 1.23.17
+  origversion: 1.23.17-150500.3.6.1
   status: legacy
   summary: Container Scheduling and Management
   licenses:
@@ -8078,6 +8058,71 @@
     - System/Management
   vulnerable: true
 - repo: opensuse_leap_15_6
+  subrepo: main/oss
+  srcname: kubernetes
+  visiblename: kubernetes
+  version: 1.18.10
+  origversion: 1.18.10-lp156.4.2
+  status: legacy
+  summary: Container Scheduling and Management
+  licenses:
+    - Apache-2.0
+  categories:
+    - System/Management
+  vulnerable: true
+- repo: opensuse_leap_15_6
+  subrepo: main/oss
+  srcname: kubernetes1.18
+  visiblename: kubernetes1.18
+  version: 1.18.10
+  origversion: 1.18.10-lp156.3.18
+  status: legacy
+  summary: Container Scheduling and Management
+  licenses:
+    - Apache-2.0
+  categories:
+    - System/Management
+  vulnerable: true
+- repo: opensuse_leap_15_6
+  subrepo: main/oss
+  srcname: kubernetes1.17
+  visiblename: kubernetes1.17
+  version: 1.17.7
+  origversion: 1.17.7-lp156.3.21
+  status: legacy
+  summary: Container Scheduling and Management
+  licenses:
+    - Apache-2.0
+  categories:
+    - System/Management
+  vulnerable: true
+- repo: opensuse_leap_15_6
+  subrepo: main/oss
+  srcname: kubernetes1.19
+  visiblename: kubernetes1.19
+  version: 1.19.15
+  origversion: 1.19.15-lp156.3.21
+  status: legacy
+  summary: Container Scheduling and Management
+  licenses:
+    - Apache-2.0
+  categories:
+    - System/Management
+  vulnerable: true
+- repo: opensuse_leap_15_6
+  subrepo: main/oss
+  srcname: kubernetes1.20
+  visiblename: kubernetes1.20
+  version: 1.20.13
+  origversion: 1.20.13-lp156.3.21
+  status: legacy
+  summary: Container Scheduling and Management
+  licenses:
+    - Apache-2.0
+  categories:
+    - System/Management
+  vulnerable: true
+- repo: opensuse_leap_15_6
   subrepo: updates/sle
   srcname: kubernetes1.18
   visiblename: kubernetes1.18
@@ -8168,16 +8213,6 @@
   categories:
     - System/Management
   vulnerable: true
-- repo: wakemeops
-  subrepo: devops
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.26.3
-  origversion: 1.26.3-1~ops2deb
-  status: legacy
-  maintainers:
-    - ops2deb@upciti.com
-  vulnerable: true
 - repo: opensuse_leap_15_6
   subrepo: updates/sle
   srcname: kubernetes1.24
@@ -8216,85 +8251,6 @@
     - Apache-2.0
   categories:
     - System/Management
-  vulnerable: true
-- repo: opensuse_leap_15_6
-  subrepo: main/oss
-  srcname: kubernetes
-  visiblename: kubernetes
-  version: 1.18.10
-  origversion: 1.18.10-lp156.4.2
-  status: legacy
-  summary: Container Scheduling and Management
-  licenses:
-    - Apache-2.0
-  categories:
-    - System/Management
-  vulnerable: true
-- repo: opensuse_leap_15_6
-  subrepo: main/oss
-  srcname: kubernetes1.18
-  visiblename: kubernetes1.18
-  version: 1.18.10
-  origversion: 1.18.10-lp156.3.18
-  status: legacy
-  summary: Container Scheduling and Management
-  licenses:
-    - Apache-2.0
-  categories:
-    - System/Management
-  vulnerable: true
-- repo: opensuse_leap_15_6
-  subrepo: main/oss
-  srcname: kubernetes1.17
-  visiblename: kubernetes1.17
-  version: 1.17.7
-  origversion: 1.17.7-lp156.3.21
-  status: legacy
-  summary: Container Scheduling and Management
-  licenses:
-    - Apache-2.0
-  categories:
-    - System/Management
-  vulnerable: true
-- repo: opensuse_leap_15_6
-  subrepo: main/oss
-  srcname: kubernetes1.19
-  visiblename: kubernetes1.19
-  version: 1.19.15
-  origversion: 1.19.15-lp156.3.21
-  status: legacy
-  summary: Container Scheduling and Management
-  licenses:
-    - Apache-2.0
-  categories:
-    - System/Management
-  vulnerable: true
-- repo: opensuse_leap_15_6
-  subrepo: main/oss
-  srcname: kubernetes1.20
-  visiblename: kubernetes1.20
-  version: 1.20.13
-  origversion: 1.20.13-lp156.3.21
-  status: legacy
-  summary: Container Scheduling and Management
-  licenses:
-    - Apache-2.0
-  categories:
-    - System/Management
-  vulnerable: true
-- repo: raspbian_oldstable
-  subrepo: main
-  srcname: kubernetes
-  binnames:
-    - kubernetes-client
-  visiblename: kubernetes
-  version: 1.20.5+really1.20.2
-  origversion: 1.20.5+really1.20.2-1.1+deb12u1
-  status: outdated
-  maintainers:
-    - ocsi@debian.org
-  categories:
-    - misc
   vulnerable: true
 - repo: pardus_21
   subrepo: main
@@ -8363,6 +8319,20 @@
   categories:
     - admin
   vulnerable: true
+- repo: raspbian_oldstable
+  subrepo: main
+  srcname: kubernetes
+  binnames:
+    - kubernetes-client
+  visiblename: kubernetes
+  version: 1.20.5+really1.20.2
+  origversion: 1.20.5+really1.20.2-1.1+deb12u1
+  status: outdated
+  maintainers:
+    - ocsi@debian.org
+  categories:
+    - misc
+  vulnerable: true
 - repo: ubuntu_20_04
   subrepo: focal/universe
   srcname: kubernetes
@@ -8404,26 +8374,6 @@
     - adam.stokes@ubuntu.com
   categories:
     - universe/misc
-  vulnerable: true
-- repo: wakemeops
-  subrepo: devops
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.28.3
-  origversion: 1.28.3-1~ops2deb
-  status: legacy
-  maintainers:
-    - ops2deb@upciti.com
-  vulnerable: true
-- repo: wakemeops
-  subrepo: devops
-  binname: kubectl
-  visiblename: kubectl
-  version: 1.28.2
-  origversion: 1.28.2-1~ops2deb
-  status: legacy
-  maintainers:
-    - ops2deb@upciti.com
   vulnerable: true
 - repo: wakemeops
   subrepo: devops
@@ -8481,6 +8431,56 @@
   visiblename: kubectl
   version: 1.27.1
   origversion: 1.27.1-1~ops2deb
+  status: legacy
+  maintainers:
+    - ops2deb@upciti.com
+  vulnerable: true
+- repo: wakemeops
+  subrepo: devops
+  binname: kubectl
+  visiblename: kubectl
+  version: 1.27.0
+  origversion: 1.27.0-1~ops2deb
+  status: legacy
+  maintainers:
+    - ops2deb@upciti.com
+  vulnerable: true
+- repo: wakemeops
+  subrepo: devops
+  binname: kubectl
+  visiblename: kubectl
+  version: 1.26.3
+  origversion: 1.26.3-1~ops2deb
+  status: legacy
+  maintainers:
+    - ops2deb@upciti.com
+  vulnerable: true
+- repo: wakemeops
+  subrepo: devops
+  binname: kubectl
+  visiblename: kubectl
+  version: 1.26.2
+  origversion: 1.26.2-1~ops2deb
+  status: legacy
+  maintainers:
+    - ops2deb@upciti.com
+  vulnerable: true
+- repo: wakemeops
+  subrepo: devops
+  binname: kubectl
+  visiblename: kubectl
+  version: 1.26.1
+  origversion: 1.26.1-1~ops2deb
+  status: legacy
+  maintainers:
+    - ops2deb@upciti.com
+  vulnerable: true
+- repo: wakemeops
+  subrepo: devops
+  binname: kubectl
+  visiblename: kubectl
+  version: 1.26.0
+  origversion: 1.26.0-1~ops2deb
   status: legacy
   maintainers:
     - ops2deb@upciti.com
