@@ -14,13 +14,13 @@ x install kubernetes
 
 ## Code insight
 
-Total: **5,942,595** lines of code across **26731** files in the top 5 languages.
+Total: **5,942,796** lines of code across **26731** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| Go | 4,419,047 | 821,861 | 470,628 | 18373 |
+| Go | 4,419,251 | 821,885 | 470,644 | 18373 |
 | Json | 1,051,415 | 0 | 0 | 1236 |
-| Yaml | 405,717 | 2,742 | 653 | 6687 |
+| Yaml | 405,714 | 2,741 | 653 | 6687 |
 | Sh | 33,368 | 12,490 | 6,412 | 299 |
 | Protobuf | 14,313 | 34,434 | 7,045 | 136 |
 
@@ -43,44 +43,26 @@ Lowest-scoring checks:
 ## Release
 
 - **Latest**: `v1.35.11` (2026-11-25)
-- **Last commit**: 2026-11-25
+- **Last commit**: 2026-11-27
 
 ## Popularity
 
-- **Stars**: 129,364 · **Forks**: 45,063 · **Open issues**: 50,092 · **Contributors**: 4,487
+- **Stars**: 129,398 · **Forks**: 45,070 · **Open issues**: 50,094 · **Contributors**: 4,487
 
 ## Totals (cumulative)
 
-- **Releases**: 830 · **Merged PRs**: 67225 · **Open PRs**: 1360 · **Closed issues**: 48215 · **Open issues**: 1877 · **Commits**: 144102
+- **Releases**: 830 · **Merged PRs**: 67228 · **Open PRs**: 1359 · **Closed issues**: 48219 · **Open issues**: 1875 · **Commits**: 144109
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-27 | 9 | 385 | 347 | 50 | 131 | 906 |
-| last60d | 2026-09-27 | 11 | 875 | 583 | 117 | 225 | 1927 |
-| 90d | 2026-08-28 | 15 | 1195 | 767 | 192 | 310 | 2678 |
-| last180d | 2026-05-30 | 32 | 2157 | 1112 | 497 | 536 | 4839 |
-| 360d | 2025-12-01 | 62 | 3844 | 1303 | 1166 | 758 | 8848 |
-| last720d | 2024-12-06 | 100 | 6818 | 1343 | 2766 | 995 | 16877 |
-
-## Distribution status
-
-Reported by **618** distros on [repology.org](https://repology.org/project/kubernetes). **7** are ✅ on the latest upstream release, **286** are ⚠️ on an older version.
-
-| Distro | Version | Status |
-|--------|---------|--------|
-| Debian unstable | `1.36.4` | ⚠️ outdated |
-| Debian 14 | `1.36.4` | ⚠️ outdated |
-| Debian 13 | `1.32.3` | ⚠️ outdated |
-| Ubuntu 24.04 LTS | `1.0` | ⚠️ outdated |
-| Arch | `1.37.2` | ⚠️ outdated |
-| Homebrew | `1.37.3` | ✅ latest |
-| Fedora rawhide | `1.34.13` | 🪦 legacy |
-| Nix unstable | `1.37.2` | ⚠️ outdated |
-| Void | `1.37.0` | ⚠️ outdated |
-| Alpine edge | `1.37.1` | ⚠️ outdated |
-| openSUSE Tumbleweed | `1.37.2` | ⚠️ outdated |
+| 30d | 2026-10-28 | 9 | 362 | 337 | 47 | 127 | 913 |
+| last60d | 2026-09-28 | 11 | 858 | 580 | 117 | 221 | 1934 |
+| 90d | 2026-08-29 | 15 | 1192 | 767 | 194 | 308 | 2685 |
+| last180d | 2026-05-31 | 32 | 2157 | 1111 | 497 | 535 | 4846 |
+| 360d | 2025-12-02 | 62 | 3838 | 1301 | 1161 | 755 | 8855 |
+| last720d | 2024-12-07 | 100 | 6821 | 1342 | 2768 | 994 | 16876 |
 
 ## Improve this data
 
@@ -91,4 +73,4 @@ Install metadata for kubernetes lives in the [x-cmd/install](https://github.com/
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261126.yml` · 2026-11-26T09:50:41Z._
+_Snapshot: `data/card/261127.yml` · 2026-11-27T10:42:01Z._
