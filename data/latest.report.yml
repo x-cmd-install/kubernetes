@@ -7,7 +7,7 @@ about:
   latestVersion: "v1.35.11"
   latestRelease: "v1.35.11"
   latestPrerelease: "v1.38.0-beta.0"
-  collectedAt: 2026-11-27T10:38:34Z
+  collectedAt: 2026-11-28T09:36:51Z
 timeline:
   created: 2014-06-06
   lastCommit: 2026-11-27
@@ -15,13 +15,13 @@ timeline:
   lastRelease: 2026-11-25
   lastPrerelease: 2026-11-06
 popularity:
-  star: 129398
-  watcher: 3262
-  fork: 45070
+  star: 129273
+  watcher: 3264
+  fork: 45025
   release: 830
-  contributor: 4487
-  pullRequest: 93627
-  issue: 50094
+  contributor: 4488
+  pullRequest: 93638
+  issue: 50095
 language:
   Go: 108680379
   Shell: 1943775
@@ -36,63 +36,63 @@ language:
 totalBytes: 110901975
 recent:
   last30d:
-    since: 2026-10-28
-    release: 9
-    mergedPR: 362
-    openPR: 337
-    closedIssue: 47
-    openIssue: 127
+    since: 2026-10-29
+    release: 4
+    mergedPR: 335
+    openPR: 335
+    closedIssue: 45
+    openIssue: 124
     commit: 913
   last60d:
-    since: 2026-09-28
+    since: 2026-09-29
     release: 11
-    mergedPR: 858
-    openPR: 580
-    closedIssue: 117
-    openIssue: 221
+    mergedPR: 839
+    openPR: 585
+    closedIssue: 115
+    openIssue: 219
     commit: 1934
   last90d:
-    since: 2026-08-29
+    since: 2026-08-30
     release: 15
-    mergedPR: 1192
-    openPR: 767
-    closedIssue: 194
-    openIssue: 308
+    mergedPR: 1188
+    openPR: 775
+    closedIssue: 192
+    openIssue: 309
     commit: 2685
   last180d:
-    since: 2026-05-31
+    since: 2026-06-01
     release: 32
-    mergedPR: 2157
-    openPR: 1111
-    closedIssue: 497
-    openIssue: 535
+    mergedPR: 2145
+    openPR: 1118
+    closedIssue: 493
+    openIssue: 534
     commit: 4846
   last360d:
-    since: 2025-12-02
+    since: 2025-12-03
     release: 62
-    mergedPR: 3838
-    openPR: 1301
-    closedIssue: 1161
-    openIssue: 755
+    mergedPR: 3829
+    openPR: 1311
+    closedIssue: 1158
+    openIssue: 756
     commit: 8855
   last720d:
-    since: 2024-12-07
+    since: 2024-12-08
     release: 100
-    mergedPR: 6821
-    openPR: 1342
+    mergedPR: 6820
+    openPR: 1352
     closedIssue: 2768
-    openIssue: 994
-    commit: 16876
+    openIssue: 995
+    commit: 16874
 total:
   release: 830
   mergedPR: 67228
-  openPR: 1359
+  openPR: 1369
   closedIssue: 48219
-  openIssue: 1875
+  openIssue: 1876
   commit: 144109
 ---
 path: /home/runner/.x-repo/github.com/kubernetes/kubernetes
-collectedAt: 2026-11-27T10:41:36Z
+collectedAt: 2026-11-28T09:39:58Z
 loc:
   Go:
     code: 4419251
@@ -386,4 +386,4 @@ checks:
       - 'Info:   0 out of   1 pipCommand dependencies pinned'
       - 'Info:   0 out of   1 downloadThenRun dependencies pinned'
 ---
-{"id":458262337,"author":{"login":"k8s-release-robot","id":33505452,"node_id":"MDQ6VXNlcjMzNTA1NDUy","gravatar_id":"","type":"User","user_view_type":"public","site_admin":false},"node_id":"RE_kwDOAToIks4bUIdB","tag_name":"v1.37.3","target_commitish":"master","name":"v1.37.3","draft":false,"immutable":false,"prerelease":false,"created_at":"2026-11-25T10:39:40Z","updated_at":"2026-11-25T14:55:41Z","published_at":"2026-11-25T14:55:41Z","assets":[],"body":"\nSee [kubernetes-announce@](https://groups.google.com/forum/#!forum/kubernetes-announce). Additional binary downloads are linked in the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.37.md).\n\nSee the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.37.md) for more details.\n\n\n\n","reactions":{"total_count":1,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":1,"eyes":0}}
+{"id":458262337,"author":{"login":"k8s-release-robot","id":33505452,"node_id":"MDQ6VXNlcjMzNTA1NDUy","gravatar_id":"","type":"User","user_view_type":"public","site_admin":false},"node_id":"RE_kwDOAToIks4bUIdB","tag_name":"v1.37.3","target_commitish":"master","name":"v1.37.3","draft":false,"immutable":false,"prerelease":false,"created_at":"2026-11-25T10:39:40Z","updated_at":"2026-11-25T14:55:41Z","published_at":"2026-11-25T14:55:41Z","assets":[],"body":"\nSee [kubernetes-announce@](https://groups.google.com/forum/#!forum/kubernetes-announce). Additional binary downloads are linked in the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.37.md).\n\nSee the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.37.md) for more details.\n\n\n\n","reactions":{"total_count":2,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":2,"eyes":0}}
