@@ -47,22 +47,22 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 129,398 · **Forks**: 45,070 · **Open issues**: 50,094 · **Contributors**: 4,487
+- **Stars**: 129,273 · **Forks**: 45,025 · **Open issues**: 50,095 · **Contributors**: 4,488
 
 ## Totals (cumulative)
 
-- **Releases**: 830 · **Merged PRs**: 67228 · **Open PRs**: 1359 · **Closed issues**: 48219 · **Open issues**: 1875 · **Commits**: 144109
+- **Releases**: 830 · **Merged PRs**: 67228 · **Open PRs**: 1369 · **Closed issues**: 48219 · **Open issues**: 1876 · **Commits**: 144109
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-28 | 9 | 362 | 337 | 47 | 127 | 913 |
-| last60d | 2026-09-28 | 11 | 858 | 580 | 117 | 221 | 1934 |
-| 90d | 2026-08-29 | 15 | 1192 | 767 | 194 | 308 | 2685 |
-| last180d | 2026-05-31 | 32 | 2157 | 1111 | 497 | 535 | 4846 |
-| 360d | 2025-12-02 | 62 | 3838 | 1301 | 1161 | 755 | 8855 |
-| last720d | 2024-12-07 | 100 | 6821 | 1342 | 2768 | 994 | 16876 |
+| 30d | 2026-10-29 | 4 | 335 | 335 | 45 | 124 | 913 |
+| last60d | 2026-09-29 | 11 | 839 | 585 | 115 | 219 | 1934 |
+| 90d | 2026-08-30 | 15 | 1188 | 775 | 192 | 309 | 2685 |
+| last180d | 2026-06-01 | 32 | 2145 | 1118 | 493 | 534 | 4846 |
+| 360d | 2025-12-03 | 62 | 3829 | 1311 | 1158 | 756 | 8855 |
+| last720d | 2024-12-08 | 100 | 6820 | 1352 | 2768 | 995 | 16874 |
 
 ## Improve this data
 
@@ -73,4 +73,4 @@ Install metadata for kubernetes lives in the [x-cmd/install](https://github.com/
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261127.yml` · 2026-11-27T10:42:01Z._
+_Snapshot: `data/card/261128.yml` · 2026-11-28T09:40:23Z._
